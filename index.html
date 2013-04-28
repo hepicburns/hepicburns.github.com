@@ -1,647 +1,1178 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)https://heather-burns-1rc4.squarespace.com/blog//?r=46736159 -->
-<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" itemscope="" itemtype="http://schema.org/Article" lang="en-US" class="yui3-js-enabled js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-chunk-n4-active wf-active" id="yui_3_7_3_1_1367101291252_515"><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" itemscope="" itemtype="http://schema.org/Article" lang="en-US" class="yui3-js-enabled js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-chunk-n4-active wf-active"
+id="yui_3_7_3_1_1367101291252_515">
+    <div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css"></style>
+        <!-- r2907 -->
+        <!-- This is Squarespace. -->
+        <!-- heather-burns-1rc4 -->
+        <meta charset="utf-8">
+        <title>GIRLS like Games</title>
+        <meta property="og:site_name" content="GIRLS like Games">
+        <meta property="og:title" content="Blog">
+        <meta itemprop="name" content="Blog">
+        <meta property="og:url" content="http://heather-burns-1rc4.squarespace.com/blog">
+        <meta itemprop="url" content="http://heather-burns-1rc4.squarespace.com/blog">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c1eb7e4b0d7e92bf18002/?format=500w">
+        <meta itemprop="image" content="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c1eb7e4b0d7e92bf18002/?format=500w">
+        <link rel="image_src" href="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c1eb7e4b0d7e92bf18002/?format=500w">
+        <script>
+            (function () {
+                var l = !1,
+                    q = [1500, 1000, 750, 500, 300, 100],
+                    s = new function () {
+                        this.load = function (b, n) {
+                            b.getDOMNode && (b = b.getDOMNode());
+                            var o = this._getDataFromNode(b, n),
+                                m = !(!o.a || !o.a.width || !o.a.height),
+                                k = o.load + "";
+                            if ("false" === k) {
+                                return l
+                            }
+                            var i = o.mode;
+                            if (m && ("fit" == i || "fill" == i)) {
+                                i = b.parentNode;
+                                if (!i) {
+                                    return console.error("Not doing anything, parentNode not found."), l
+                                }
+                                if (!this.f(b, n, i)) {
+                                    return l
+                                }
+                            }
+                            i = this.g(b, o);
+                            if ("string" == typeof i && "viewport" !== k) {
+                                var j = this.k(i, o);
+                                b.getAttribute("src") !== j && (b.onload = function () {
+                                    b.className = b.className.replace("loading", " ").trim()
+                                }, !b.getAttribute("src") && -1 === b.className.indexOf("loading") && (b.className += (b.className ? " " : "") + "loading"), !b.getAttribute("src") && m ? b.setAttribute("src", j) : (o = new Image, o.onload = function () {
+                                    m ? b.setAttribute("src", j) : (b.setAttribute("data-image-dimensions", this.width + "x" + this.height), s.load(b, n))
+                                }, o.onerror = function () {
+                                    b.className = b.className.replace("loading", " ").trim();
+                                    b.setAttribute("src", j)
+                                }, o.src = j));
+                                return !0
+                            }
+                            return i
+                        };
+                        this.f = function (G, E, F) {
+                            G.getDOMNode && (G = G.getDOMNode());
+                            F && F.getDOMNode && (F = F.getDOMNode());
+                            F = F || G.parentNode;
+                            if (!F) {
+                                return console.error("Not doing anything, parentNode not found."), l
+                            }
+                            var D = this._getDataFromNode(G, E),
+                                C = F.offsetWidth,
+                                A = F.offsetHeight;
+                            E = D.mode;
+                            if ("none" != E) {
+                                var B = D.a.width,
+                                    z = D.a.height,
+                                    o = B / z,
+                                    b = C / A,
+                                    y;
+                                "fill" === E ? y = o > b ? A / z : C / B : "fit" === E && (y = o < b ? A / z : C / B);
+                                !D.d && ("fit" == E && 1 < y) && (y = 1);
+                                B = Math.floor(B * y);
+                                y = Math.floor(z * y);
+                                var i, x;
+                                "fill" === E ? (i = Math.min(Math.max(C / 2 - B * D.c.x, C - B), 0), x = Math.min(Math.max(A / 2 - y * D.c.y, A - y), 0)) : "fit" === E && (x = D.e, i = x.left ? 0 : x.right ? C - B : B < C ? (C - B) / 2 : 0, x = x.top ? 0 : x.bottom ? A - y : y < A ? (A - y) / 2 : 0, "inline" == this.b(G, "display") && (G.style.fontSize = "0px"), B -= G.offsetHeight - G.clientHeight, y -= G.offsetWidth - G.clientWidth);
+                                if (0 === B || 0 === y) {
+                                    return l
+                                }
+                                G.style.top = Math.floor(x) + "px";
+                                G.style.left = Math.floor(i) + "px";
+                                G.style.width = Math.floor(B) + "px";
+                                G.style.height = Math.floor(y) + "px";
+                                i = this.b(F, "position");
+                                G.style.position = "relative" == i ? "absolute" : "relative";
+                                if ("fill" == E && (G = this.b(F, "overflow"), !G || "hidden" != G)) {
+                                    F.style.overflow = "hidden"
+                                }
+                                return !0
+                            }
+                        };
+                        this.g = function (A, y) {
+                            function z(h, g) {
+                                "none" === y.mode && (A.style.width = null, A.style.height = null);
+                                var d = parseFloat(A.getAttribute(h)),
+                                    a = parseFloat(d);
+                                if (!a || isNaN(a)) {
+                                    d = o.b(A, h), a = parseFloat(d)
+                                }
+                                if (!a || isNaN(a)) {
+                                    d = o.b(A, "max-" + h, "max" + (h.substr(0, 1).toUpperCase() + h.substr(1))), a = parseFloat(d)
+                                }
+                                if (0 === g || d) {
+                                    switch (o.i(d)) {
+                                    case "percentage":
+                                        g = parseInt(d, 10) / 100 * m.offsetWidth;
+                                        break;
+                                    case "number":
+                                        g = parseInt(d, 10)
+                                    }
+                                }!a && (0 !== g && !A.getAttribute("src")) && (g = 0);
+                                return g
+                            }
+                            y = y || this._getDataFromNode(A);
+                            if (!y.source) {
+                                return l
+                            }
+                            var x = A.offsetWidth,
+                                p = A.offsetHeight,
+                                m = A.parentNode,
+                                o = this,
+                                k = A.getAttribute("alt"),
+                                i = k && 0 < k.length && "none" === y.mode && !A.getAttribute("src");
+                            if (i) {
+                                var b = A.style.display;
+                                A.removeAttribute("alt");
+                                A.style.display = "none";
+                                A.offsetHeight + 0;
+                                A.style.display = b
+                            }
+                            x = z("width", x);
+                            p = z("height", p);
+                            i && A.setAttribute("alt", k);
+                            0 === x && 0 === p ? (x = y.a.width, p = y.a.height) : 0 === x ? x = this.getDimensionForValue("width", p, y) : 0 === p && (p = this.getDimensionForValue("height", x, y));
+                            "viewport" === y.load && (A.style.width = Math.floor(x) + "px", A.style.height = Math.floor(p) + "px");
+                            return this.j(x, p, y)
+                        };
+                        this._getDataFromNode = function (b, g) {
+                            g = g || {};
+                            var h = {
+                                c: {
+                                    x: 0.5,
+                                    y: 0.5
+                                },
+                                a: {
+                                    width: null,
+                                    height: null
+                                },
+                                mode: "none",
+                                e: {
+                                    h: !0
+                                },
+                                load: "true",
+                                d: !0
+                            };
+                            if (g.c) {
+                                h.c = g.c
+                            } else {
+                                var f = b.getAttribute("data-image-focal-point");
+                                if (f && (f = f.split(",")) && 2 == f.length) {
+                                    h.c = {
+                                        x: parseFloat(f[0]),
+                                        y: parseFloat(f[1])
+                                    }
+                                }
+                            } if (g.a) {
+                                h.a = g.a
+                            } else {
+                                if ((f = b.getAttribute("data-image-dimensions")) && (f = f.split("x")) && 2 == f.length) {
+                                    h.a = {
+                                        width: parseInt(f[0], 10),
+                                        height: parseInt(f[1], 10)
+                                    }
+                                }
+                            }
+                            g.mode ? h.mode = g.mode : (f = b.parentNode.className, -1 !== f.indexOf("content-fill") ? h.mode = "fill" : -1 !== f.indexOf("content-fit") && (h.mode = "fit"));
+                            if ("fit" === h.mode && (f = g.e || b.getAttribute("data-alignment") || b.parentNode.getAttribute("data-alignment"))) {
+                                h.e = {
+                                    top: -1 !== f.indexOf("top"),
+                                    left: -1 !== f.indexOf("left"),
+                                    h: -1 !== f.indexOf("center"),
+                                    right: -1 !== f.indexOf("right"),
+                                    bottom: -1 !== f.indexOf("bottom")
+                                }
+                            }
+                            if (g.load) {
+                                h.load = g.load
+                            } else {
+                                if (f = b.getAttribute("data-load")) {
+                                    h.load = f
+                                }
+                            } if ("undefined" !== typeof g.d) {
+                                h.d = g.d
+                            } else {
+                                if (f = b.getAttribute("data-image-stretch")) {
+                                    h.d = "true" === f ? !0 : l
+                                }
+                            }
+                            g.source ? h.source = g.source : h.source = b.getAttribute("data-image") || b.getAttribute("data-src");
+                            if (h.source && (-1 !== h.source.indexOf("squarespace.com") || -1 !== h.source.indexOf("squarespace.net")) && "http:" === h.source.substr(0, 5) && "https" === window.location.protocol.substr(0, 5)) {
+                                h.source = h.source.replace("http://", "https://")
+                            }
+                            return h
+                        };
+                        this.i = function (b) {
+                            return "string" === typeof b && -1 !== b.indexOf("%") ? "percentage" : isNaN(parseInt(b, 10)) ? NaN : "number"
+                        };
+                        this.b = function (b, g, h) {
+                            var f;
+                            b.currentStyle ? f = b.currentStyle[h || g] : window.getComputedStyle && (f = document.defaultView.getComputedStyle(b, null).getPropertyValue(g));
+                            return f
+                        };
+                        this.j = function (b, e, f) {
+                            b = Math.max(e / (f.a.height / f.a.width), b);
+                            "number" == typeof window.devicePixelRatio && (b = b * window.devicePixelRatio);
+                            for (e = 1; e < q.length && !(b > q[e]); e++) {}
+                            return q[e - 1] + "w"
+                        };
+                        this.getDimensionForValue = function (b, g, h) {
+                            var f = h.a.width;
+                            h = h.a.height;
+                            return "width" == b ? f / h * g : "height" == b ? h / f * g : NaN
+                        };
+                        this.k = function (b, e) {
+                            var f = e.source;
+                            return b && ("/" == f[0] || -1 != f.indexOf("squarespace.com") || -1 != f.indexOf("squarespace.net")) ? (f = f + (-1 !== f.indexOf("?") ? "\x26" : "?") + "format\x3d" + b, window.b && window.b.l && (f += "\x26storage\x3dlocal"), f) : e.source
+                        }
+                    };
+                window.ImageLoader = s;
+                var t, u, v = 50;
 
-  <!-- r2907 -->
-  <!-- This is Squarespace. -->
-<!-- heather-burns-1rc4 -->
-<meta charset="utf-8">
-<title>GIRLS like Games</title>
-<meta property="og:site_name" content="GIRLS like Games">
-<meta property="og:title" content="Blog">
-<meta itemprop="name" content="Blog">
-<meta property="og:url" content="http://heather-burns-1rc4.squarespace.com/blog">
-<meta itemprop="url" content="http://heather-burns-1rc4.squarespace.com/blog">
-<meta property="og:type" content="article">
-<meta property="og:image" content="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c1eb7e4b0d7e92bf18002/?format=500w">
-<meta itemprop="image" content="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c1eb7e4b0d7e92bf18002/?format=500w">
-<link rel="image_src" href="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c1eb7e4b0d7e92bf18002/?format=500w">
-<script>(function() {var l=!1,q=[1500,1000,750,500,300,100],s=new function(){this.load=function(b,n){b.getDOMNode&&(b=b.getDOMNode());
-var o=this._getDataFromNode(b,n),m=!(!o.a||!o.a.width||!o.a.height),k=o.load+"";
-if("false"===k){return l
-}var i=o.mode;
-if(m&&("fit"==i||"fill"==i)){i=b.parentNode;
-if(!i){return console.error("Not doing anything, parentNode not found."),l
-}if(!this.f(b,n,i)){return l
-}}i=this.g(b,o);
-if("string"==typeof i&&"viewport"!==k){var j=this.k(i,o);
-b.getAttribute("src")!==j&&(b.onload=function(){b.className=b.className.replace("loading"," ").trim()
-},!b.getAttribute("src")&&-1===b.className.indexOf("loading")&&(b.className+=(b.className?" ":"")+"loading"),!b.getAttribute("src")&&m?b.setAttribute("src",j):(o=new Image,o.onload=function(){m?b.setAttribute("src",j):(b.setAttribute("data-image-dimensions",this.width+"x"+this.height),s.load(b,n))
-},o.onerror=function(){b.className=b.className.replace("loading"," ").trim();
-b.setAttribute("src",j)
-},o.src=j));
-return !0
-}return i
-};
-this.f=function(G,E,F){G.getDOMNode&&(G=G.getDOMNode());
-F&&F.getDOMNode&&(F=F.getDOMNode());
-F=F||G.parentNode;
-if(!F){return console.error("Not doing anything, parentNode not found."),l
-}var D=this._getDataFromNode(G,E),C=F.offsetWidth,A=F.offsetHeight;
-E=D.mode;
-if("none"!=E){var B=D.a.width,z=D.a.height,o=B/z,b=C/A,y;
-"fill"===E?y=o>b?A/z:C/B:"fit"===E&&(y=o<b?A/z:C/B);
-!D.d&&("fit"==E&&1<y)&&(y=1);
-B=Math.floor(B*y);
-y=Math.floor(z*y);
-var i,x;
-"fill"===E?(i=Math.min(Math.max(C/2-B*D.c.x,C-B),0),x=Math.min(Math.max(A/2-y*D.c.y,A-y),0)):"fit"===E&&(x=D.e,i=x.left?0:x.right?C-B:B<C?(C-B)/2:0,x=x.top?0:x.bottom?A-y:y<A?(A-y)/2:0,"inline"==this.b(G,"display")&&(G.style.fontSize="0px"),B-=G.offsetHeight-G.clientHeight,y-=G.offsetWidth-G.clientWidth);
-if(0===B||0===y){return l
-}G.style.top=Math.floor(x)+"px";
-G.style.left=Math.floor(i)+"px";
-G.style.width=Math.floor(B)+"px";
-G.style.height=Math.floor(y)+"px";
-i=this.b(F,"position");
-G.style.position="relative"==i?"absolute":"relative";
-if("fill"==E&&(G=this.b(F,"overflow"),!G||"hidden"!=G)){F.style.overflow="hidden"
-}return !0
-}};
-this.g=function(A,y){function z(h,g){"none"===y.mode&&(A.style.width=null,A.style.height=null);
-var d=parseFloat(A.getAttribute(h)),a=parseFloat(d);
-if(!a||isNaN(a)){d=o.b(A,h),a=parseFloat(d)
-}if(!a||isNaN(a)){d=o.b(A,"max-"+h,"max"+(h.substr(0,1).toUpperCase()+h.substr(1))),a=parseFloat(d)
-}if(0===g||d){switch(o.i(d)){case"percentage":g=parseInt(d,10)/100*m.offsetWidth;
-break;
-case"number":g=parseInt(d,10)
-}}!a&&(0!==g&&!A.getAttribute("src"))&&(g=0);
-return g
-}y=y||this._getDataFromNode(A);
-if(!y.source){return l
-}var x=A.offsetWidth,p=A.offsetHeight,m=A.parentNode,o=this,k=A.getAttribute("alt"),i=k&&0<k.length&&"none"===y.mode&&!A.getAttribute("src");
-if(i){var b=A.style.display;
-A.removeAttribute("alt");
-A.style.display="none";
-A.offsetHeight+0;
-A.style.display=b
-}x=z("width",x);
-p=z("height",p);
-i&&A.setAttribute("alt",k);
-0===x&&0===p?(x=y.a.width,p=y.a.height):0===x?x=this.getDimensionForValue("width",p,y):0===p&&(p=this.getDimensionForValue("height",x,y));
-"viewport"===y.load&&(A.style.width=Math.floor(x)+"px",A.style.height=Math.floor(p)+"px");
-return this.j(x,p,y)
-};
-this._getDataFromNode=function(b,g){g=g||{};
-var h={c:{x:0.5,y:0.5},a:{width:null,height:null},mode:"none",e:{h:!0},load:"true",d:!0};
-if(g.c){h.c=g.c
-}else{var f=b.getAttribute("data-image-focal-point");
-if(f&&(f=f.split(","))&&2==f.length){h.c={x:parseFloat(f[0]),y:parseFloat(f[1])}
-}}if(g.a){h.a=g.a
-}else{if((f=b.getAttribute("data-image-dimensions"))&&(f=f.split("x"))&&2==f.length){h.a={width:parseInt(f[0],10),height:parseInt(f[1],10)}
-}}g.mode?h.mode=g.mode:(f=b.parentNode.className,-1!==f.indexOf("content-fill")?h.mode="fill":-1!==f.indexOf("content-fit")&&(h.mode="fit"));
-if("fit"===h.mode&&(f=g.e||b.getAttribute("data-alignment")||b.parentNode.getAttribute("data-alignment"))){h.e={top:-1!==f.indexOf("top"),left:-1!==f.indexOf("left"),h:-1!==f.indexOf("center"),right:-1!==f.indexOf("right"),bottom:-1!==f.indexOf("bottom")}
-}if(g.load){h.load=g.load
-}else{if(f=b.getAttribute("data-load")){h.load=f
-}}if("undefined"!==typeof g.d){h.d=g.d
-}else{if(f=b.getAttribute("data-image-stretch")){h.d="true"===f?!0:l
-}}g.source?h.source=g.source:h.source=b.getAttribute("data-image")||b.getAttribute("data-src");
-if(h.source&&(-1!==h.source.indexOf("squarespace.com")||-1!==h.source.indexOf("squarespace.net"))&&"http:"===h.source.substr(0,5)&&"https"===window.location.protocol.substr(0,5)){h.source=h.source.replace("http://","https://")
-}return h
-};
-this.i=function(b){return"string"===typeof b&&-1!==b.indexOf("%")?"percentage":isNaN(parseInt(b,10))?NaN:"number"
-};
-this.b=function(b,g,h){var f;
-b.currentStyle?f=b.currentStyle[h||g]:window.getComputedStyle&&(f=document.defaultView.getComputedStyle(b,null).getPropertyValue(g));
-return f
-};
-this.j=function(b,e,f){b=Math.max(e/(f.a.height/f.a.width),b);
-"number"==typeof window.devicePixelRatio&&(b=b*window.devicePixelRatio);
-for(e=1;
-e<q.length&&!(b>q[e]);
-e++){}return q[e-1]+"w"
-};
-this.getDimensionForValue=function(b,g,h){var f=h.a.width;
-h=h.a.height;
-return"width"==b?f/h*g:"height"==b?h/f*g:NaN
-};
-this.k=function(b,e){var f=e.source;
-return b&&("/"==f[0]||-1!=f.indexOf("squarespace.com")||-1!=f.indexOf("squarespace.net"))?(f=f+(-1!==f.indexOf("?")?"\x26":"?")+"format\x3d"+b,window.b&&window.b.l&&(f+="\x26storage\x3dlocal"),f):e.source
-}
-};
-window.ImageLoader=s;
-var t,u,v=50;
-function w(){var b=document.images,i=document.styleSheets;
-if(0>--v&&"complete"==document.readyState){clearTimeout(u),console.warn("Timed Out: No images were found on page.")
-}else{if(0<b.length&&t&&(t.rules||t.cssRules)){window.clearTimeout(u);
-for(var i=l,j=0,h=b.length;
-j<h;
-j++){var g;
-if(g=(b[j].hasAttribute?b[j].hasAttribute("data-image"):!!b[j].attributes["data-image"])||(b[j].hasAttribute?b[j].hasAttribute("data-src"):!!b[j].attributes["data-src"])){g=b[j],g="false"!==(g.getAttribute?g.getAttribute("data-load"):g.attributes["data-load"])+""
-}g&&(i=!s.load(b[j])||i)
-}i&&(u=window.setTimeout(w,50))
-}else{if(!t){b=0;
-for(j=i.length;
-b<j;
-b++){/\/site.css\?/.test(i[b].href)&&(t=i[b])
-}}u=window.setTimeout(w,50)
-}}}w();
-document.addEventListener&&document.addEventListener("DOMContentLoaded",w,l);})();</script>
-<script type="text/javascript" src="./index_files/yui-seed.js"></script>
-<link rel="canonical" href="http://heather-burns-1rc4.squarespace.com/">
-<link rel="shortcut icon" type="image/x-icon" href="https://heather-burns-1rc4.squarespace.com/favicon.ico">
-<script type="text/javascript" src="./index_files/t7l6hX-ga7XXtC0g9-NZ_TFQuf2FCjZOeb2Kgn55DcbfenCgfFHN4UJLFRbh52jhWD9UFhwUFDmqZQsKwebaZQqkjcjUFRiyFU7gMAy8jWsGZWJlj1mkd1wlwW4RFfoDSWmyScmDSeBRZPoRdhXCHKoGZABX-emkOA4uScoDOQBkjDb0SaBujW48Sagyjh90jhNlOey8jWsGZWJlj1mkd1wlw.js"></script>
-<link rel="stylesheet" href="https://use.typekit.net/c/d597a0/chunk:n4.NN9:H:2/d?3bb2a6e53c9684ffdc9a9bf1135b2a62ecbeaca761fbe87f15aec127a15286d4a75e973d7f9dbc79ff735cee780edb01aac0ea4f7b8995b95681f7fc8ffab86b76918ebf60eacaeec70d440f5d97333b2e640c499bee532b01f723cc6bbe664e7a200f3ee7b53154521c06bf81e91ffce764f2d350edce77da278bc6164dd0aca3bad2c45167d0e62fdca9b6ed1ed1b7f1a1f76a5dc177f1bef363e853d7d81bf214995f0ead4f1ccca0dc687504544939fa81"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<link rel="stylesheet" type="text/css" href="./index_files/css">
-<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://heather-burns-1rc4.squarespace.com/blog?format=rss">
+                function w() {
+                    var b = document.images,
+                        i = document.styleSheets;
+                    if (0 > --v && "complete" == document.readyState) {
+                        clearTimeout(u), console.warn("Timed Out: No images were found on page.")
+                    } else {
+                        if (0 < b.length && t && (t.rules || t.cssRules)) {
+                            window.clearTimeout(u);
+                            for (var i = l, j = 0, h = b.length; j < h; j++) {
+                                var g;
+                                if (g = (b[j].hasAttribute ? b[j].hasAttribute("data-image") : !! b[j].attributes["data-image"]) || (b[j].hasAttribute ? b[j].hasAttribute("data-src") : !! b[j].attributes["data-src"])) {
+                                    g = b[j], g = "false" !== (g.getAttribute ? g.getAttribute("data-load") : g.attributes["data-load"]) + ""
+                                }
+                                g && (i = !s.load(b[j]) || i)
+                            }
+                            i && (u = window.setTimeout(w, 50))
+                        } else {
+                            if (!t) {
+                                b = 0;
+                                for (j = i.length; b < j; b++) {
+                                    /\/site.css\?/.test(i[b].href) && (t = i[b])
+                                }
+                            }
+                            u = window.setTimeout(w, 50)
+                        }
+                    }
+                }
+                w();
+                document.addEventListener && document.addEventListener("DOMContentLoaded", w, l);
+            })();
+        </script>
+        <script type="text/javascript" src="./index_files/yui-seed.js"></script>
+        <link rel="canonical" href="http://heather-burns-1rc4.squarespace.com/">
+        <link rel="shortcut icon" type="image/x-icon" href="https://heather-burns-1rc4.squarespace.com/favicon.ico">
+        <script type="text/javascript" src="js/longname.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/c/d597a0/chunk:n4.NN9:H:2/d?3bb2a6e53c9684ffdc9a9bf1135b2a62ecbeaca761fbe87f15aec127a15286d4a75e973d7f9dbc79ff735cee780edb01aac0ea4f7b8995b95681f7fc8ffab86b76918ebf60eacaeec70d440f5d97333b2e640c499bee532b01f723cc6bbe664e7a200f3ee7b53154521c06bf81e91ffce764f2d350edce77da278bc6164dd0aca3bad2c45167d0e62fdca9b6ed1ed1b7f1a1f76a5dc177f1bef363e853d7d81bf214995f0ead4f1ccca0dc687504544939fa81">
+        <script type="text/javascript">
+            try {
+                Typekit.load();
+            } catch (e) {}
+        </script>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://heather-burns-1rc4.squarespace.com/blog?format=rss">
+        <script>
+            Static.SQUARESPACE_CONTEXT = {
+                "appDomain": "squarespace.com",
+                "collection": {
+                    "id": "517c175de4b0d7e92bf167ad",
+                    "mainImageId": "517c1eb7e4b0d7e92bf18002",
+                    "mainImage": {
+                        "id": "517c1eb7e4b0d7e92bf18002",
+                        "cloned": false,
+                        "recordType": 2,
+                        "version": 1,
+                        "addedOn": 1367088823688,
+                        "updatedOn": 1367088831182,
+                        "starred": false,
+                        "workflowState": 1,
+                        "authorId": "517c175de4b0d7e92bf167a5",
+                        "systemDataId": "1367088823688-4VHLPOV512C0CF7XDVC4",
+                        "systemDataVariants": "563x750,100w,300w,500w",
+                        "systemDataSourceType": "PNG",
+                        "systemDataOrigin": "USER_UPLOAD",
+                        "filename": "6a00e398244402883300e54f40990e8834-800wi.png",
+                        "mediaFocalPoint": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "source": 3
+                        },
+                        "colorData": {
+                            "topLeftAverage": "f7be00",
+                            "topRightAverage": "fbc700",
+                            "bottomLeftAverage": "aa933f",
+                            "bottomRightAverage": "d4c05b",
+                            "centerAverage": "cd8e1d",
+                            "suggestedBgColor": "fbcc02"
+                        },
+                        "urlId": "5bkg48x45vr50pvsdhvce4eqhpgy2b",
+                        "title": "",
+                        "body": null,
+                        "customContent": null,
+                        "likeCount": 0,
+                        "commentCount": 0,
+                        "publicCommentCount": 0,
+                        "commentState": 1,
+                        "unsaved": false,
+                        "author": {
+                            "id": "517c175de4b0d7e92bf167a5",
+                            "lastLoginOn": 1367086943150,
+                            "lastActiveOn": 1367086943150,
+                            "deleted": false,
+                            "personalAccount": true,
+                            "isGlobalAdmin": false,
+                            "displayName": "Heather Burns",
+                            "firstName": "Heather",
+                            "lastName": "Burns",
+                            "enabled": true,
+                            "confirmed": true,
+                            "emailVerified": false,
+                            "location": null,
+                            "revalidateTimestamp": 0,
+                            "invitesGiven": 0,
+                            "systemGenerated": false
+                        },
+                        "assetUrl": "http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c1eb7e4b0d7e92bf18002/1367088831182/6a00e398244402883300e54f40990e8834-800wi.png",
+                        "postItemInjectCode": "",
+                        "contentType": "image/png",
+                        "pushedServices": {},
+                        "originalSize": "563x750",
+                        "recordTypeLabel": "image"
+                    },
+                    "enabled": true,
+                    "starred": false,
+                    "type": 1,
+                    "ordering": 2,
+                    "title": "Blog",
+                    "navigationTitle": "Blog",
+                    "urlId": "blog",
+                    "itemCount": 8,
+                    "updatedOn": 1367089156011,
+                    "description": "",
+                    "publicCommentCount": 0,
+                    "pageSize": 4,
+                    "folder": false,
+                    "dropdown": false,
+                    "tags": ["web", "typography", "video", "design", "art", "movies", "installation", "chalk", "illustration", "print", "product", "freelance"],
+                    "categories": ["Movies"],
+                    "homepage": true,
+                    "typeName": "blog",
+                    "synchronizing": false,
+                    "typeLabel": "blog",
+                    "fullUrl": "/"
+                },
+                "connectedAccounts": [],
+                "secureDomain": "https://heather-burns-1rc4.squarespace.com",
+                "subscribed": false,
+                "templateCapabilities": {
+                    "custom": false,
+                    "customTypes": [],
+                    "layouts": {
+                        "default": {
+                            "name": "Default",
+                            "regions": ["site"]
+                        }
+                    },
+                    "pageSchemas": {
+                        "folder": {},
+                        "gallery": {
+                            "ordering": 1
+                        },
+                        "events": {
+                            "ordering": 4
+                        },
+                        "blog": {
+                            "ordering": 2
+                        }
+                    },
+                    "templatePageConfigs": {},
+                    "widgetSchemas": {
+                        "1": [{
+                                "type": "navigation",
+                                "schemaName": "navigation"
+                            }
+                        ],
+                        "2": [],
+                        "3": [{
+                                "type": "logo",
+                                "schemaName": "logo"
+                            }
+                        ],
+                        "4": [],
+                        "5": [],
+                        "6": [],
+                        "9": [],
+                        "12": [],
+                        "44": [],
+                        "50": [],
+                        "16": [],
+                        "18": [],
+                        "21": [],
+                        "23": [],
+                        "22": [],
+                        "25": [],
+                        "24": [],
+                        "26": []
+                    }
+                },
+                "templateTweakable": true,
+                "tweakJSON": {
+                    "gallery-arrow-style": "Circular",
+                    "gallery-aspect-ratio": "3:2 Standard",
+                    "gallery-auto-crop": "false",
+                    "gallery-autoplay": "false",
+                    "gallery-info-overlay": "Always Show",
+                    "gallery-loop": "true",
+                    "gallery-navigation": "Thumbnails",
+                    "gallery-show-arrows": "true",
+                    "gallery-transitions": "Fade",
+                    "galleryArrowBackground": "#e1e1e1",
+                    "galleryArrowColor": "#fff",
+                    "galleryAutoplaySpeed": "3",
+                    "galleryCircleColor": "#fff",
+                    "galleryInfoBackground": "rgba(0, 0, 0, .7)",
+                    "galleryThumbnailSize": "138px",
+                    "product-gallery-auto-crop": "true",
+                    "product-image-auto-crop": "false"
+                },
+                "website": {
+                    "id": "517c175de4b0d7e92bf167a7",
+                    "identifier": "heather-burns-1rc4",
+                    "contentModifiedOn": 1367099351369,
+                    "siteStatus": {},
+                    "language": "en-US",
+                    "timeZone": "America/New_York",
+                    "machineTimeZoneOffset": -14400000,
+                    "timeZoneOffset": -14400000,
+                    "timeZoneAbbr": "EDT",
+                    "siteTitle": "GIRLS like Games",
+                    "siteDescription": "<p>\u200BBoard games, video games, mind games. &nbsp;This is a space for us ladies to share our favorite games and organize game events.</p>",
+                    "location": {
+                        "addressTitle": "",
+                        "addressLine1": "",
+                        "addressLine2": "",
+                        "addressCountry": ""
+                    },
+                    "shareButtonOptions": {
+                        "5": true,
+                        "6": true,
+                        "3": true,
+                        "2": true,
+                        "8": true,
+                        "7": true,
+                        "4": true,
+                        "1": true
+                    },
+                    "authenticUrl": "http://heather-burns-1rc4.squarespace.com",
+                    "baseUrl": "http://heather-burns-1rc4.squarespace.com",
+                    "statsMigrated": false
+                },
+                "websiteCloneable": false,
+                "websiteSettings": {
+                    "id": "517c175de4b0d7e92bf167a8",
+                    "websiteId": "517c175de4b0d7e92bf167a7",
+                    "simpleLikingEnabled": true,
+                    "defaultPostFormat": "%y/%m/%d/%t",
+                    "commentLikesAllowed": true,
+                    "commentAnonAllowed": true,
+                    "commentThreaded": true,
+                    "commentApprovalRequired": false,
+                    "commentAvatarsOn": true,
+                    "commentSortType": 2,
+                    "commentFlagThreshold": 0,
+                    "commentFlagsAllowed": true,
+                    "commentEnableByDefault": true,
+                    "disqusShortname": "",
+                    "homepageTitleFormat": "%s",
+                    "collectionTitleFormat": "%c \u2014 %s",
+                    "itemTitleFormat": "%i \u2014 %s",
+                    "commentsEnabled": true,
+                    "allowSquarespacePromotion": true,
+                    "storeSettings": {
+                        "returnPolicy": null,
+                        "termsOfService": null,
+                        "privacyPolicy": null,
+                        "useLightCart": false,
+                        "measurementStandard": 1,
+                        "isLive": false,
+                        "storeState": 3,
+                        "stripeConnected": false
+                    },
+                    "useEscapeKeyToLogin": true
+                }
+            };
+            SquarespaceFonts.loadViaContext();
+            Squarespace.load();
+        </script>
+        <link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_2" href="https://static.squarespace.com/combo/yui/?3.7.3/build/widget-base/assets/skins/sam/widget-base.css">
+        <link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_3" href="https://static.squarespace.com/combo/squarespace/042620132202342525/?../styles-v6/video.css&../styles-v6/audio-player.css&../styles-v6/animations.css&../styles-v6/gallery-ng.css&../styles-v6/ui-base.css&../styles-v6/currency-symbols.css&../styles-v6/spinner.css&../styles-v6/pill-shopping-cart.css&../styles-v6/lightbox.css&../styles-v6/comments.css">
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_6" src="./index_files/easyXDM.js" async=""></script>
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_7" src="./index_files/saved_resource" async=""></script>
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_8" src="./index_files/saved_resource(1)" async=""></script>
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_5" src="./index_files/jstween-1.1.min.js"></script>
+        <link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_9" href="https://static.squarespace.com/combo/squarespace/042620132202342525/?../styles-v6/video.css&../styles-v6/audio-player.css&../styles-v6/animations.css&../styles-v6/gallery-ng.css&../styles-v6/ui-base.css&../styles-v6/currency-symbols.css&../styles-v6/spinner.css&../styles-v6/pill-shopping-cart.css&../styles-v6/lightbox.css&../styles-v6/comments.css">
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_10" src="./index_files/jstween-1.1.min.js"></script>
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_111" src="./index_files/saved_resource(2)" async=""></script>
+        <link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_575" href="https://static.squarespace.com/combo/squarespace/042620132202342525/?../styles-v6/social-button.css">
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_576" src="./index_files/saved_resource(3)" async=""></script>
+        <script charset="utf-8" id="yui_3_7_3_1_1367101291252_581" src="./index_files/saved_resource(4)" async=""></script>
+        <!--[if gte IE 9]>
+            <!-- -->
+            <link rel="stylesheet" type="text/css" href="css/site.css">
+            <!-- <![endif]-->
+            <!--[if lt IE 9]>
+                <script src="//static.squarespace.com/universal/scripts-thirdparty/html5/html5-shiv.js"></script>
+                <link rel="stylesheet" type="text/css" href="/site.css?tid=4f84457724acf88285416908&r=2907&t=1367089961208&noMedia=true" />
+            <![endif]-->
+            <meta name="viewport" content="width=device-width">
+            <script src="./index_files/shrink.js"></script>
+            <script type="text/javascript" src="./index_files/saved_resource(5)"></script>
+    </head>
+    
+    <body id="collection-517c175de4b0d7e92bf167ad" class="collection-type-blog homepage view-list mobile-style-available collection-517c175de4b0d7e92bf167ad collection-layout-default header-position-float site-title-position-sidebar navigation-position-sidebar sidebar-position-left social-icons-match-template  promoted-blocks-blog-post promoted-blocks-blog-list gallery-navigation-thumbnails gallery-info-overlay-always-show gallery-aspect-ratio-32-standard gallery-arrow-style-circular gallery-transitions-fade gallery-show-arrows   gallery-loop   event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-excerpts event-list-date event-list-time event-list-address event-icalgcal-links    product-list-titles-under product-list-alignment-center product-item-size-11-square  product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav native-currency-code-usd   shrink-ready">
+        <div class="mobile-nav clear">
+            <div class="show-nav"></div>
+            <div class="nav">
+                <div class="nav-link active">	<a href="https://heather-burns-1rc4.squarespace.com/" class="blog-collection"><span>Blog</span></a>
 
-<script> Static.SQUARESPACE_CONTEXT = {"appDomain":"squarespace.com","collection":{"id":"517c175de4b0d7e92bf167ad","mainImageId":"517c1eb7e4b0d7e92bf18002","mainImage":{"id":"517c1eb7e4b0d7e92bf18002","cloned":false,"recordType":2,"version":1,"addedOn":1367088823688,"updatedOn":1367088831182,"starred":false,"workflowState":1,"authorId":"517c175de4b0d7e92bf167a5","systemDataId":"1367088823688-4VHLPOV512C0CF7XDVC4","systemDataVariants":"563x750,100w,300w,500w","systemDataSourceType":"PNG","systemDataOrigin":"USER_UPLOAD","filename":"6a00e398244402883300e54f40990e8834-800wi.png","mediaFocalPoint":{"x":0.5,"y":0.5,"source":3},"colorData":{"topLeftAverage":"f7be00","topRightAverage":"fbc700","bottomLeftAverage":"aa933f","bottomRightAverage":"d4c05b","centerAverage":"cd8e1d","suggestedBgColor":"fbcc02"},"urlId":"5bkg48x45vr50pvsdhvce4eqhpgy2b","title":"","body":null,"customContent":null,"likeCount":0,"commentCount":0,"publicCommentCount":0,"commentState":1,"unsaved":false,"author":{"id":"517c175de4b0d7e92bf167a5","lastLoginOn":1367086943150,"lastActiveOn":1367086943150,"deleted":false,"personalAccount":true,"isGlobalAdmin":false,"displayName":"Heather Burns","firstName":"Heather","lastName":"Burns","enabled":true,"confirmed":true,"emailVerified":false,"location":null,"revalidateTimestamp":0,"invitesGiven":0,"systemGenerated":false},"assetUrl":"http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c1eb7e4b0d7e92bf18002/1367088831182/6a00e398244402883300e54f40990e8834-800wi.png","postItemInjectCode":"","contentType":"image/png","pushedServices":{},"originalSize":"563x750","recordTypeLabel":"image"},"enabled":true,"starred":false,"type":1,"ordering":2,"title":"Blog","navigationTitle":"Blog","urlId":"blog","itemCount":8,"updatedOn":1367089156011,"description":"","publicCommentCount":0,"pageSize":4,"folder":false,"dropdown":false,"tags":["web","typography","video","design","art","movies","installation","chalk","illustration","print","product","freelance"],"categories":["Movies"],"homepage":true,"typeName":"blog","synchronizing":false,"typeLabel":"blog","fullUrl":"/"},"connectedAccounts":[],"secureDomain":"https://heather-burns-1rc4.squarespace.com","subscribed":false,"templateCapabilities":{"custom":false,"customTypes":[],"layouts":{"default":{"name":"Default","regions":["site"]}},"pageSchemas":{"folder":{},"gallery":{"ordering":1},"events":{"ordering":4},"blog":{"ordering":2}},"templatePageConfigs":{},"widgetSchemas":{"1":[{"type":"navigation","schemaName":"navigation"}],"2":[],"3":[{"type":"logo","schemaName":"logo"}],"4":[],"5":[],"6":[],"9":[],"12":[],"44":[],"50":[],"16":[],"18":[],"21":[],"23":[],"22":[],"25":[],"24":[],"26":[]}},"templateTweakable":true,"tweakJSON":{"gallery-arrow-style":"Circular","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"false","gallery-autoplay":"false","gallery-info-overlay":"Always Show","gallery-loop":"true","gallery-navigation":"Thumbnails","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"#e1e1e1","galleryArrowColor":"#fff","galleryAutoplaySpeed":"3","galleryCircleColor":"#fff","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"138px","product-gallery-auto-crop":"true","product-image-auto-crop":"false"},"website":{"id":"517c175de4b0d7e92bf167a7","identifier":"heather-burns-1rc4","contentModifiedOn":1367099351369,"siteStatus":{},"language":"en-US","timeZone":"America/New_York","machineTimeZoneOffset":-14400000,"timeZoneOffset":-14400000,"timeZoneAbbr":"EDT","siteTitle":"GIRLS like Games","siteDescription":"<p>\u200BBoard games, video games, mind games. &nbsp;This is a space for us ladies to share our favorite games and organize game events.</p>","location":{"addressTitle":"","addressLine1":"","addressLine2":"","addressCountry":""},"shareButtonOptions":{"5":true,"6":true,"3":true,"2":true,"8":true,"7":true,"4":true,"1":true},"authenticUrl":"http://heather-burns-1rc4.squarespace.com","baseUrl":"http://heather-burns-1rc4.squarespace.com","statsMigrated":false},"websiteCloneable":false,"websiteSettings":{"id":"517c175de4b0d7e92bf167a8","websiteId":"517c175de4b0d7e92bf167a7","simpleLikingEnabled":true,"defaultPostFormat":"%y/%m/%d/%t","commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"disqusShortname":"","homepageTitleFormat":"%s","collectionTitleFormat":"%c \u2014 %s","itemTitleFormat":"%i \u2014 %s","commentsEnabled":true,"allowSquarespacePromotion":true,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"useLightCart":false,"measurementStandard":1,"isLive":false,"storeState":3,"stripeConnected":false},"useEscapeKeyToLogin":true}}; SquarespaceFonts.loadViaContext(); Squarespace.load(); </script><link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_2" href="https://static.squarespace.com/combo/yui/?3.7.3/build/widget-base/assets/skins/sam/widget-base.css"><link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_3" href="https://static.squarespace.com/combo/squarespace/042620132202342525/?../styles-v6/video.css&../styles-v6/audio-player.css&../styles-v6/animations.css&../styles-v6/gallery-ng.css&../styles-v6/ui-base.css&../styles-v6/currency-symbols.css&../styles-v6/spinner.css&../styles-v6/pill-shopping-cart.css&../styles-v6/lightbox.css&../styles-v6/comments.css"><script charset="utf-8" id="yui_3_7_3_1_1367101291252_6" src="./index_files/easyXDM.js" async=""></script><script charset="utf-8" id="yui_3_7_3_1_1367101291252_7" src="./index_files/saved_resource" async=""></script><script charset="utf-8" id="yui_3_7_3_1_1367101291252_8" src="./index_files/saved_resource(1)" async=""></script><script charset="utf-8" id="yui_3_7_3_1_1367101291252_5" src="./index_files/jstween-1.1.min.js"></script><link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_9" href="https://static.squarespace.com/combo/squarespace/042620132202342525/?../styles-v6/video.css&../styles-v6/audio-player.css&../styles-v6/animations.css&../styles-v6/gallery-ng.css&../styles-v6/ui-base.css&../styles-v6/currency-symbols.css&../styles-v6/spinner.css&../styles-v6/pill-shopping-cart.css&../styles-v6/lightbox.css&../styles-v6/comments.css"><script charset="utf-8" id="yui_3_7_3_1_1367101291252_10" src="./index_files/jstween-1.1.min.js"></script><script charset="utf-8" id="yui_3_7_3_1_1367101291252_111" src="./index_files/saved_resource(2)" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_7_3_1_1367101291252_575" href="https://static.squarespace.com/combo/squarespace/042620132202342525/?../styles-v6/social-button.css"><script charset="utf-8" id="yui_3_7_3_1_1367101291252_576" src="./index_files/saved_resource(3)" async=""></script><script charset="utf-8" id="yui_3_7_3_1_1367101291252_581" src="./index_files/saved_resource(4)" async=""></script>
+                </div>
+                <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/about/" class="page-collection"><span>About</span></a>
 
-<!--[if gte IE 9]> <!-- --><link rel="stylesheet" type="text/css" href="./index_files/site.css"><!-- <![endif]-->
-<!--[if lt IE 9]><script src="//static.squarespace.com/universal/scripts-thirdparty/html5/html5-shiv.js"></script><link rel="stylesheet" type="text/css" href="/site.css?tid=4f84457724acf88285416908&r=2907&t=1367089961208&noMedia=true"/><![endif]-->
- 
+                </div>
+                <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/game-events/" class="events-collection"><span>Game Events</span></a>
 
-    <meta name="viewport" content="width=device-width">
-  
-	<script src="./index_files/shrink.js"></script>
-	<script type="text/javascript" src="./index_files/saved_resource(5)"></script>
-  
-</head>
+                </div>
+                <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/new-page/" class="page-collection"><span>Calander</span></a>
 
-<body id="collection-517c175de4b0d7e92bf167ad" class="collection-type-blog homepage view-list mobile-style-available collection-517c175de4b0d7e92bf167ad collection-layout-default header-position-float site-title-position-sidebar navigation-position-sidebar sidebar-position-left social-icons-match-template  promoted-blocks-blog-post promoted-blocks-blog-list gallery-navigation-thumbnails gallery-info-overlay-always-show gallery-aspect-ratio-32-standard gallery-arrow-style-circular gallery-transitions-fade gallery-show-arrows   gallery-loop   event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-excerpts event-list-date event-list-time event-list-address event-icalgcal-links    product-list-titles-under product-list-alignment-center product-item-size-11-square  product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav native-currency-code-usd   shrink-ready">
+                </div>
+                <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/games/" class="gallery-collection"><span>Game Gallery</span></a>
 
-  <div class="mobile-nav clear">
-		<div class="show-nav"></div>
-
-<div class="nav">
-
-		<div class="nav-link active">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/" class="blog-collection"><span>Blog</span></a>
-				
-			
-							
-				</div>
-
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/about/" class="page-collection"><span>About</span></a>
-				
-			
-							
-				</div>
-
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/game-events/" class="events-collection"><span>Game Events</span></a>
-				
-			
-							
-				</div>
-
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/new-page/" class="page-collection"><span>Calander</span></a>
-				
-			
-							
-				</div>
-
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/games/" class="gallery-collection"><span>Game Gallery</span></a>
-				
-			
-							
-				</div>
-
-	
-</div>
-
-	</div>
-					
-	<header id="header" class="logo-site-title">
-    <div class="wrapper clear">
-
-    				<div class="header-logo">
-			  <h1 class="header-site-title" data-content-field="site-title">
+                </div>
+            </div>
+        </div>
+        <header id="header" class="logo-site-title">
+            <div class="wrapper clear">
+                <div class="header-logo">
+                     <h1 class="header-site-title" data-content-field="site-title">
 			  	<a href="https://heather-burns-1rc4.squarespace.com/">
 			  					  		<span class="header-site-title-span" data-shrink-original-spacing="0" data-shrink-original-size="36" style="">GIRLS like Games</span>
 			  	</a>
 				</h1>
-			</div> 
-						
-    	<div class="header-nav clear">
-    		<div class="show-nav"></div>
 
-<div class="nav">
+                </div>
+                <div class="header-nav clear">
+                    <div class="show-nav"></div>
+                    <div class="nav">
+                        <div class="nav-link active">	<a href="https://heather-burns-1rc4.squarespace.com/" class="blog-collection"><span>Blog</span></a>
 
-		<div class="nav-link active">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/" class="blog-collection"><span>Blog</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/about/" class="page-collection"><span>About</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/about/" class="page-collection"><span>About</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/game-events/" class="events-collection"><span>Game Events</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/game-events/" class="events-collection"><span>Game Events</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/new-page/" class="page-collection"><span>Calander</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/new-page/" class="page-collection"><span>Calander</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/games/" class="gallery-collection"><span>Game Gallery</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/games/" class="gallery-collection"><span>Game Gallery</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="site">
+            <div class="wrapper clear" id="yui_3_7_3_1_1367101291252_514">
+                <div id="content">
+                    <section role="main" class="list clear" id="yui_3_7_3_1_1367101291252_513">
+                        <article class="entry hentry promoted promoted-block-image author-heather-burns post-type-text article-index-1 clear" id="article-517c175de4b0d7e92bf16800" data-item-id="517c175de4b0d7e92bf16800">
+                            <div class="promoted on" id="yui_3_7_3_1_1367101291252_512">
+                                <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16800">
+                                    <div class="row sqs-row" id="yui_3_7_3_1_1367101291252_511">
+                                        <div class="col sqs-col-12 span-12" id="yui_3_7_3_1_1367101291252_510">
+                                            <div class="sqs-block image-block" data-block-json="{&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;description&quot;:{&quot;source&quot;:&quot;&quot;,&quot;engine&quot;:&quot;wysiwyg&quot;,&quot;html&quot;:&quot;&quot;},&quot;linkTo&quot;:&quot;http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive&quot;,&quot;newwindow&quot;:true,&quot;imageId&quot;:&quot;517c175de4b0d7e92bf167c4&quot;,&quot;filename&quot;:&quot;jpeg.jpeg&quot;,&quot;lightbox&quot;:false,&quot;stretch&quot;:true,&quot;newWindow&quot;:false}"
+                                            data-block-type="5" id="block-f8ada28d5a403ef78798">
+                                                <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_509">
+                                                    <a href="http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive" target="_blank" id="yui_3_7_3_1_1367101291252_508">
+                                                        <div class="image-block-outer-wrapper layout-caption-hidden" id="yui_3_7_3_1_1367101291252_507">
+                                                            <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_506">
+                                                                <div class="image-block-wrapper" style="padding-bottom:75.0%;" id="yui_3_7_3_1_1367101291252_505">
+                                                                    <img src="http://www.placekitten.com/560/420"
 
-	
-</div>
-
-    	</div>
-    	
-    </div>
-  </header>
-
-  <div id="site">
-     <div class="wrapper clear" id="yui_3_7_3_1_1367101291252_514">
-
-	    <div id="content">
-	      <section role="main" class="list clear" id="yui_3_7_3_1_1367101291252_513">
-  
-	<article class="entry hentry promoted promoted-block-image author-heather-burns post-type-text article-index-1 clear" id="article-517c175de4b0d7e92bf16800" data-item-id="517c175de4b0d7e92bf16800">
-		
-				<div class="promoted on" id="yui_3_7_3_1_1367101291252_512">
-			<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16800"><div class="row sqs-row" id="yui_3_7_3_1_1367101291252_511"><div class="col sqs-col-12 span-12" id="yui_3_7_3_1_1367101291252_510"><div class="sqs-block image-block" data-block-json="{&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;description&quot;:{&quot;source&quot;:&quot;&quot;,&quot;engine&quot;:&quot;wysiwyg&quot;,&quot;html&quot;:&quot;&quot;},&quot;linkTo&quot;:&quot;http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive&quot;,&quot;newwindow&quot;:true,&quot;imageId&quot;:&quot;517c175de4b0d7e92bf167c4&quot;,&quot;filename&quot;:&quot;jpeg.jpeg&quot;,&quot;lightbox&quot;:false,&quot;stretch&quot;:true,&quot;newWindow&quot;:false}" data-block-type="5" id="block-f8ada28d5a403ef78798"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_509"><a href="http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive" target="_blank" id="yui_3_7_3_1_1367101291252_508"><div class="image-block-outer-wrapper layout-caption-hidden" id="yui_3_7_3_1_1367101291252_507"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_506"><div class="image-block-wrapper" style="padding-bottom:75.0%;" id="yui_3_7_3_1_1367101291252_505"><img data-image-focal-point="0.4810330540207287,0.414795295609237" data-image-dimensions="560x420" data-image="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c175de4b0d7e92bf167c4/1355935052092/jpeg.jpeg" data-src="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c175de4b0d7e92bf167c4/1355935052092/jpeg.jpeg" style="" class="" src="./index_files/jpeg.jpeg"></div></div></div></a></div></div></div></div></div>
-		</div>
-		 
-		
-		<div class="entry-content" id="yui_3_7_3_1_1367101291252_537">
-		
-			<h1 data-content-field="title" class="post-title">
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content" id="yui_3_7_3_1_1367101291252_537">
+                                	<h1 data-content-field="title" class="post-title">
 			        <a href="https://heather-burns-1rc4.squarespace.com/blog/creative-morning-archives">Creative Morning Archives</a>
             </h1>
-      
-      			<div class="promoted off" id="yui_3_7_3_1_1367101291252_536">
-				<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16800"><div class="row sqs-row" id="yui_3_7_3_1_1367101291252_535"><div class="col sqs-col-12 span-12" id="yui_3_7_3_1_1367101291252_534"><div class="sqs-block image-block" data-block-json="{&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;description&quot;:{&quot;source&quot;:&quot;&quot;,&quot;engine&quot;:&quot;wysiwyg&quot;,&quot;html&quot;:&quot;&quot;},&quot;linkTo&quot;:&quot;http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive&quot;,&quot;newwindow&quot;:true,&quot;imageId&quot;:&quot;517c175de4b0d7e92bf167c4&quot;,&quot;filename&quot;:&quot;jpeg.jpeg&quot;,&quot;lightbox&quot;:false,&quot;stretch&quot;:true,&quot;newWindow&quot;:false}" data-block-type="5" id="block-f8ada28d5a403ef78798"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_533"><a href="http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive" target="_blank" id="yui_3_7_3_1_1367101291252_532"><div class="image-block-outer-wrapper layout-caption-hidden" id="yui_3_7_3_1_1367101291252_531"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_530"><div class="image-block-wrapper" style="padding-bottom:75.0%;" id="yui_3_7_3_1_1367101291252_529"><img data-image-focal-point="0.4810330540207287,0.414795295609237" data-image-dimensions="560x420" data-image="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c175de4b0d7e92bf167c4/1355935052092/jpeg.jpeg" data-src="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c175de4b0d7e92bf167c4/1355935052092/jpeg.jpeg" style="" class="" src="./index_files/jpeg.jpeg"></div></div></div></a></div></div></div></div></div>
-			</div>
-			 
-			
-			<div class="body">
-    	    		<div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16800"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;One Friday morning a month, people in the creative community gather to hear a speaker share their story at&amp;nbsp;Creative Mornings. Help them build a growing, searchable archive of every talk from their thirty-four chapters around the world.&lt;/p&gt;&lt;p&gt;+&amp;nbsp;&lt;a href=\&quot;http://kck.st/SwnCpj\&quot; data-link-type=\&quot;external\&quot; target=\&quot;_blank\&quot;&gt;kickstarter.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;source&quot;:&quot;&quot;}}" data-block-type="2" id="block-a3eda3b74182bc110ecd"><div class="sqs-block-content"><p>One Friday morning a month, people in the creative community gather to hear a speaker share their story at&nbsp;Creative Mornings. Help them build a growing, searchable archive of every talk from their thirty-four chapters around the world.</p><p>+&nbsp;<a href="http://kck.st/SwnCpj" data-link-type="external" target="_blank">kickstarter.com</a></p></div></div></div></div></div>				  		    	</div>	
-    	
-    			
-	    <div class="meta-list clear">
 
-	    	<div class="meta-item date">
-		    	<span class="meta-icon"></span>
-		    	<time>December 19, 2012</time>
-	    	</div>
+                                <div class="promoted off" id="yui_3_7_3_1_1367101291252_536">
+                                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16800">
+                                        <div class="row sqs-row" id="yui_3_7_3_1_1367101291252_535">
+                                            <div class="col sqs-col-12 span-12" id="yui_3_7_3_1_1367101291252_534">
+                                                <div class="sqs-block image-block" data-block-json="{&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;description&quot;:{&quot;source&quot;:&quot;&quot;,&quot;engine&quot;:&quot;wysiwyg&quot;,&quot;html&quot;:&quot;&quot;},&quot;linkTo&quot;:&quot;http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive&quot;,&quot;newwindow&quot;:true,&quot;imageId&quot;:&quot;517c175de4b0d7e92bf167c4&quot;,&quot;filename&quot;:&quot;jpeg.jpeg&quot;,&quot;lightbox&quot;:false,&quot;stretch&quot;:true,&quot;newWindow&quot;:false}"
+                                                data-block-type="5" id="block-f8ada28d5a403ef78798">
+                                                    <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_533">
+                                                        <a href="http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive" target="_blank" id="yui_3_7_3_1_1367101291252_532">
+                                                            <div class="image-block-outer-wrapper layout-caption-hidden" id="yui_3_7_3_1_1367101291252_531">
+                                                                <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_530">
+                                                                    <div class="image-block-wrapper" style="padding-bottom:75.0%;" id="yui_3_7_3_1_1367101291252_529">
+                                                                        <img data-image-focal-point="0.4810330540207287,0.414795295609237" data-image-dimensions="560x420" data-image="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c175de4b0d7e92bf167c4/1355935052092/jpeg.jpeg" data-src="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/t/517c175de4b0d7e92bf167c4/1355935052092/jpeg.jpeg"
+                                                                        style="" class="" src="./index_files/jpeg.jpeg">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16800">
+                                        <div class="row sqs-row">
+                                            <div class="col sqs-col-12 span-12">
+                                                <div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;One Friday morning a month, people in the creative community gather to hear a speaker share their story at&amp;nbsp;Creative Mornings. Help them build a growing, searchable archive of every talk from their thirty-four chapters around the world.&lt;/p&gt;&lt;p&gt;+&amp;nbsp;&lt;a href=\&quot;http://kck.st/SwnCpj\&quot; data-link-type=\&quot;external\&quot; target=\&quot;_blank\&quot;&gt;kickstarter.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;source&quot;:&quot;&quot;}}"
+                                                data-block-type="2" id="block-a3eda3b74182bc110ecd">
+                                                    <div class="sqs-block-content">
+                                                        <p>Sleep on your face jump climb the curtains bat attack your ankles, catnip chuf lay down in your way sunbathe bat. Purr litter box zzz catnip litter box sleep on your keyboard, stuck in a tree tail flick climb the curtains litter box meow sleep on your face. Run bat biting meow, leap shed everywhere rip the couch lay down in your way attack leap scratched. Eat leap lick run leap, attack puking sleep in the sink knock over the lamp jump on the table. Catnip catnip scratched chuf sniff claw, jump stretching jump on the table sleep on your face hairball. Leap meow sleep on your face bat I don't like that food sleep in the sink, chase the red dot climb the curtains climb the curtains bat. Zzz shed everywhere hiss stuck in a tree meow bat, shed everywhere shed everywhere give me fish give me fish. Biting toss the mousie lick jump, tail flick leap run attack attack litter box hiss jump.</p>
+                                                        <p>+&nbsp;<a href="http://kck.st/SwnCpj" data-link-type="external" target="_blank">kickstarter.com</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-list clear">
+                                    <div class="meta-item date">	<span class="meta-icon"></span>
 
-	    		    	<div class="meta-item author">
-	    		<span class="meta-icon"></span>
-	    		<div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a></div>
-	    	</div>
-	    	 
-	    	
-	            	
-      	      	
-      	<div class="meta-item like">
-      		<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16800" data-like-count="73" id="yui_3_7_3_1_1367101291252_750"><span class="like-icon"></span><span class="like-count">73 Likes</span></span>
-      	</div>
-	      	      
-	            	<div class="meta-item comments">
-	      	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/creative-morning-archives#comments-517c175de4b0d7e92bf16800"></a></span>
-	      	<div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/creative-morning-archives#comments-517c175de4b0d7e92bf16800">Comment</a></div>
-      	</div>
-    		
-    		<div class="share">
-	      	<script>Y.use('squarespace-social-buttons');</script><span class="squarespace-social-buttons inline-style" data-system-data-id="" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16800/1355935224228/" data-record-type="1" data-full-url="/blog/creative-morning-archives" data-title="Creative Morning Archives"><div id="social-yui_3_7_3_1_1367101291252_586" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_598" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
-	    	</div>
-      	
-	    </div>
-    	
-		</div>
-	</article>
-	
-  
-	<article class="entry hentry promoted promoted-block-video tag-installation tag-chalk tag-illustration tag-print author-heather-burns post-type-text article-index-2 clear" id="article-517c175de4b0d7e92bf16801" data-item-id="517c175de4b0d7e92bf16801">
-		
-				<div class="promoted on">
-			<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16801"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;description&quot;:&quot;Dana Tanamachi, a Brooklyn chalk artist spruces up the Evernote headquarters with wall-sized art.&quot;,&quot;title&quot;:&quot;Dana Tanamachi, Chalk Artist&quot;,&quot;url&quot;:&quot;http://www.youtube.com/watch?v=ohGf9tWk6_E#!&quot;,&quot;html&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;amp;feature=oembed&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;height&quot;:360,&quot;width&quot;:640,&quot;thumbnail_width&quot;:480,&quot;version&quot;:&quot;1.0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;thumbnail_height&quot;:360,&quot;authorName&quot;:&quot;EvernoteVideos&quot;,&quot;authorUrl&quot;:&quot;http://www.youtube.com/user/EvernoteVideos&quot;,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;providerUrl&quot;:&quot;http://www.youtube.com/&quot;,&quot;thumbnailUrl&quot;:&quot;http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca08e4e4b0a97682fb4880&quot;}" data-block-type="32" id="block-ad228eac7372204c9ada"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_184"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_553"><div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_552"><div class="sqs-video-wrapper video-none" data-html="&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;feature=oembed&amp;wmode=opaque&amp;enablejsapi=1&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-provider-name="YouTube" id="yui_3_7_3_1_1367101291252_193"><div class="intrinsic" id="yui_3_7_3_1_1367101291252_551"><div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_550"><div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_7_3_1_1367101291252_213"><img data-image="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-src="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-load="false" class="loaded" data-image-dimensions="480x360" style="top: -60px; left: 0px; width: 640px; height: 480px; position: relative;" src="./index_files/hqdefault.jpg"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div></div></div></div></div></div>
-		</div>
-		 
-		
-		<div class="entry-content">
-		
-			<h1 data-content-field="title" class="post-title">
+                                        <time>December 19, 2012</time>
+                                    </div>
+                                    <div class="meta-item author">	<span class="meta-icon"></span>
+
+                                        <div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a>
+                                        </div>
+                                    </div>
+                                    <div class="meta-item like">	<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16800" data-like-count="73" id="yui_3_7_3_1_1367101291252_750"><span class="like-icon"></span><span class="like-count">73 Likes</span></span>
+                                    </div>
+                                    <div class="meta-item comments">	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/creative-morning-archives#comments-517c175de4b0d7e92bf16800"></a></span>
+
+                                        <div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/creative-morning-archives#comments-517c175de4b0d7e92bf16800">Comment</a>
+                                        </div>
+                                    </div>
+                                    <div class="share">
+                                        <script>
+                                            Y.use('squarespace-social-buttons');
+                                        </script><span class="squarespace-social-buttons inline-style" data-system-data-id="" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16800/1355935224228/" data-record-type="1"
+                                        data-full-url="/blog/creative-morning-archives" data-title="Creative Morning Archives"><div id="social-yui_3_7_3_1_1367101291252_586" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_598" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div>
+                                </div>
+                                <div class="ss-social-list-wrapper">
+                                    <div class="ss-social-button-list"></div>
+                                </div>
+                            </div>
+                </div>
+                </span>
+            </div>
+        </div>
+        </div>
+        </article>
+        <article class="entry hentry promoted promoted-block-video tag-installation tag-chalk tag-illustration tag-print author-heather-burns post-type-text article-index-2 clear" id="article-517c175de4b0d7e92bf16801" data-item-id="517c175de4b0d7e92bf16801">
+            <div class="promoted on">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16801">
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-12 span-12">
+                            <div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;description&quot;:&quot;Dana Tanamachi, a Brooklyn chalk artist spruces up the Evernote headquarters with wall-sized art.&quot;,&quot;title&quot;:&quot;Dana Tanamachi, Chalk Artist&quot;,&quot;url&quot;:&quot;http://www.youtube.com/watch?v=ohGf9tWk6_E#!&quot;,&quot;html&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;amp;feature=oembed&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;height&quot;:360,&quot;width&quot;:640,&quot;thumbnail_width&quot;:480,&quot;version&quot;:&quot;1.0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;thumbnail_height&quot;:360,&quot;authorName&quot;:&quot;EvernoteVideos&quot;,&quot;authorUrl&quot;:&quot;http://www.youtube.com/user/EvernoteVideos&quot;,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;providerUrl&quot;:&quot;http://www.youtube.com/&quot;,&quot;thumbnailUrl&quot;:&quot;http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca08e4e4b0a97682fb4880&quot;}"
+                            data-block-type="32" id="block-ad228eac7372204c9ada">
+                                <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_184">
+                                    <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_553">
+                                        <div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_552">
+                                            <div class="sqs-video-wrapper video-none" data-html="&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;feature=oembed&amp;wmode=opaque&amp;enablejsapi=1&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;"
+                                            data-provider-name="YouTube" id="yui_3_7_3_1_1367101291252_193">
+                                                <div class="intrinsic" id="yui_3_7_3_1_1367101291252_551">
+                                                    <div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_550">
+                                                        <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_7_3_1_1367101291252_213">
+                                                            <img data-image="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-src="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-load="false" class="loaded" data-image-dimensions="480x360" style="top: -60px; left: 0px; width: 640px; height: 480px; position: relative;"
+                                                            src="./index_files/hqdefault.jpg">
+                                                            <div class="sqs-video-opaque"></div>
+                                                            <div class="sqs-video-icon"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="entry-content">
+                	<h1 data-content-field="title" class="post-title">
 			        <a href="https://heather-burns-1rc4.squarespace.com/blog/dana">Dana Tanamachi</a>
             </h1>
-      
-      			<div class="promoted off">
-				<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16801"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;description&quot;:&quot;Dana Tanamachi, a Brooklyn chalk artist spruces up the Evernote headquarters with wall-sized art.&quot;,&quot;title&quot;:&quot;Dana Tanamachi, Chalk Artist&quot;,&quot;url&quot;:&quot;http://www.youtube.com/watch?v=ohGf9tWk6_E#!&quot;,&quot;html&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;amp;feature=oembed&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;height&quot;:360,&quot;width&quot;:640,&quot;thumbnail_width&quot;:480,&quot;version&quot;:&quot;1.0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;thumbnail_height&quot;:360,&quot;authorName&quot;:&quot;EvernoteVideos&quot;,&quot;authorUrl&quot;:&quot;http://www.youtube.com/user/EvernoteVideos&quot;,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;providerUrl&quot;:&quot;http://www.youtube.com/&quot;,&quot;thumbnailUrl&quot;:&quot;http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca08e4e4b0a97682fb4880&quot;}" data-block-type="32" id="block-ad228eac7372204c9ada"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_240"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_557"><div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_556"><div class="sqs-video-wrapper video-none" data-html="&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;feature=oembed&amp;wmode=opaque&amp;enablejsapi=1&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-provider-name="YouTube" id="yui_3_7_3_1_1367101291252_249"><div class="intrinsic" id="yui_3_7_3_1_1367101291252_555"><div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_554"><div class="sqs-video-overlay" style="opacity: 1;" id="yui_3_7_3_1_1367101291252_268"><img data-image="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-src="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-load="false" class="loading" data-image-dimensions="480x360"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div></div></div></div></div></div>
-			</div>
-			 
-			
-			<div class="body">
-    	    		<div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16801"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;Dana Tanamachi is a Texas-bred, Brooklyn-based graphic designer and letterer who enjoys living a quiet life and working with her hands.&amp;nbsp;After designing Broadway show posters, Dana opened her own design &amp;amp; lettering boutique, Tanamachi Studio. She has been commissioned by clients such as Google, Yahoo!, Ralph Lauren, The Ace Hotel, Tommy Hilfiger, West Elm and Bloomingdale&#39;s. In 2011, she was named a Young Gun by the Art Directors Club and a Young Creative to Watch by HOW Magazine. In 2012, Dana had the unique honor of creating custom cover art for&amp;nbsp;&lt;em&gt;O&lt;/em&gt;,&amp;nbsp;&lt;em&gt;HOW,&lt;/em&gt;&amp;nbsp;and&amp;nbsp;&lt;em&gt;TIME&amp;nbsp;&lt;/em&gt;Magazines.&lt;/p&gt;&lt;p&gt;+&amp;nbsp;&lt;a href=\&quot;http://tanamachistudio.com\&quot; data-link-type=\&quot;external\&quot; target=\&quot;_blank\&quot;&gt;tanamachistudio.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;html&quot;:&quot;&lt;p&gt;&lt;/p&gt;&quot;}}" data-block-type="2" id="block-5e25700250d8b4d35ee5"><div class="sqs-block-content"><p>Dana Tanamachi is a Texas-bred, Brooklyn-based graphic designer and letterer who enjoys living a quiet life and working with her hands.&nbsp;After designing Broadway show posters, Dana opened her own design &amp; lettering boutique, Tanamachi Studio. She has been commissioned by clients such as Google, Yahoo!, Ralph Lauren, The Ace Hotel, Tommy Hilfiger, West Elm and Bloomingdale's. In 2011, she was named a Young Gun by the Art Directors Club and a Young Creative to Watch by HOW Magazine. In 2012, Dana had the unique honor of creating custom cover art for&nbsp;<em>O</em>,&nbsp;<em>HOW,</em>&nbsp;and&nbsp;<em>TIME&nbsp;</em>Magazines.</p><p>+&nbsp;<a href="http://tanamachistudio.com/" data-link-type="external" target="_blank">tanamachistudio.com</a></p></div></div></div></div></div>				  		    	</div>	
-    	
-    			
-	    <div class="meta-list clear">
 
-	    	<div class="meta-item date">
-		    	<span class="meta-icon"></span>
-		    	<time>December 19, 2012</time>
-	    	</div>
+                <div class="promoted off">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16801">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;description&quot;:&quot;Dana Tanamachi, a Brooklyn chalk artist spruces up the Evernote headquarters with wall-sized art.&quot;,&quot;title&quot;:&quot;Dana Tanamachi, Chalk Artist&quot;,&quot;url&quot;:&quot;http://www.youtube.com/watch?v=ohGf9tWk6_E#!&quot;,&quot;html&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;amp;feature=oembed&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;height&quot;:360,&quot;width&quot;:640,&quot;thumbnail_width&quot;:480,&quot;version&quot;:&quot;1.0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;thumbnail_height&quot;:360,&quot;authorName&quot;:&quot;EvernoteVideos&quot;,&quot;authorUrl&quot;:&quot;http://www.youtube.com/user/EvernoteVideos&quot;,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;providerUrl&quot;:&quot;http://www.youtube.com/&quot;,&quot;thumbnailUrl&quot;:&quot;http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca08e4e4b0a97682fb4880&quot;}"
+                                data-block-type="32" id="block-ad228eac7372204c9ada">
+                                    <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_240">
+                                        <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_557">
+                                            <div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_556">
+                                                <div class="sqs-video-wrapper video-none" data-html="&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/ohGf9tWk6_E?fs=1&amp;feature=oembed&amp;wmode=opaque&amp;enablejsapi=1&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;"
+                                                data-provider-name="YouTube" id="yui_3_7_3_1_1367101291252_249">
+                                                    <div class="intrinsic" id="yui_3_7_3_1_1367101291252_555">
+                                                        <div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_554">
+                                                            <div class="sqs-video-overlay" style="opacity: 1;" id="yui_3_7_3_1_1367101291252_268">
+                                                                <img data-image="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-src="http://i4.ytimg.com/vi/ohGf9tWk6_E/hqdefault.jpg" data-load="false" class="loading" data-image-dimensions="480x360">
+                                                                <div class="sqs-video-opaque"></div>
+                                                                <div class="sqs-video-icon"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16801">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block html-block" data-block-json="
+                                data-block-type="2" id="block-5e25700250d8b4d35ee5">
+                                    <div class="sqs-block-content">
+                                        <p>Jump on the table sniff kittens eat sleep in the sink leap, fluffy fur attack your ankles sunbathe catnip. Lick tail flick hiss shed everywhere run, purr meow claw purr chuf. Purr zzz chuf give me fish eat tail flick, hiss sniff stuck in a tree meow. Sunbathe give me fish meow hiss, stretching shed everywhere I don't like that food meow fluffy fur jump on the table lick. Hiss hiss litter box sniff sleep in the sink puking, attack hairball chuf hiss climb the curtains sleep on your face. Run sleep on your face hairball sleep on your face scratched, rip the couch sunbathe eat the grass knock over the lamp sleep on your keyboard hairball. Hiss jump on the table give me fish zzz feed me give me fish, kittens hiss sunbathe leap litter box chase the red dot.</p>
+                                        <p>+&nbsp;<a href="http://tanamachistudio.com/" data-link-type="external" target="_blank">tanamachistudio.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meta-list clear">
+                    <div class="meta-item date">	<span class="meta-icon"></span>
 
-	    		    	<div class="meta-item author">
-	    		<span class="meta-icon"></span>
-	    		<div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a></div>
-	    	</div>
-	    	 
-	    	
-	      	      <div class="meta-item tags">
-	      	<span class="meta-icon"></span>
-	      	<ul>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=installation">#installation</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=chalk">#chalk</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=illustration">#illustration</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=print">#print</a></li>
-		      		      	</ul>
-      	</div>
-      	      	
-      	      	
-      	<div class="meta-item like">
-      		<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16801" data-like-count="158" id="yui_3_7_3_1_1367101291252_753"><span class="like-icon"></span><span class="like-count">158 Likes</span></span>
-      	</div>
-	      	      
-	            	<div class="meta-item comments">
-	      	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/dana#comments-517c175de4b0d7e92bf16801"></a></span>
-	      	<div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/dana#comments-517c175de4b0d7e92bf16801">Comment</a></div>
-      	</div>
-    		
-    		<div class="share">
-	      	<script>Y.use('squarespace-social-buttons');</script><span class="squarespace-social-buttons inline-style" data-system-data-id="1355437254639-88AVHZ0Z006F5HGTBPXT" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16801/1355437260518/jpeg.jpeg" data-record-type="1" data-full-url="/blog/dana" data-title="Dana Tanamachi"><div id="social-yui_3_7_3_1_1367101291252_588" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_613" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
-	    	</div>
-      	
-	    </div>
-    	
-		</div>
-	</article>
-	
-  
-	<article class="entry hentry promoted promoted-block-video tag-web tag-typography tag-video tag-design author-heather-burns post-type-text article-index-3 clear" id="article-517c175de4b0d7e92bf16802" data-item-id="517c175de4b0d7e92bf16802">
-		
-				<div class="promoted on">
-			<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16802"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;2012/10 Jason Santa Maria (Benefit CreativeMornings)&quot;,&quot;is_plus&quot;:&quot;1&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:1342,&quot;description&quot;:&quot;&lt;p&gt;Jason Santa Maria (http://jasonsantamaria.com) was one of our two speakers at the Kickstarter Benefit CreativeMornings here in New York in October of 2012. In this honest and insightful presentation Jason talks about \&quot;Saying NO\&quot;.&lt;/p&gt;&quot;,&quot;thumbnail_width&quot;:1280,&quot;thumbnail_height&quot;:720,&quot;video_id&quot;:53155584,&quot;authorName&quot;:&quot;CreativeMornings&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/creativemornings&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/53155584&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca04eae4b0d5715a8dd20e&quot;}" data-block-type="32" id="block-d784a317dd24a55d3714"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_293"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_561"><div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_560"><div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_302"><div class="intrinsic" id="yui_3_7_3_1_1367101291252_559"><div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_558"><div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_7_3_1_1367101291252_321"><img data-image="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-src="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-load="false" class="loaded" data-image-dimensions="1280x720" style="top: 0px; left: 0px; width: 640px; height: 360px; position: relative;" src="./index_files/367098809_1280.jpg"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div></div></div></div></div></div>
-		</div>
-		 
-		
-		<div class="entry-content">
-		
-			<h1 data-content-field="title" class="post-title">
+                        <time>December 19, 2012</time>
+                    </div>
+                    <div class="meta-item author">	<span class="meta-icon"></span>
+
+                        <div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a>
+                        </div>
+                    </div>
+                    <div class="meta-item tags">	<span class="meta-icon"></span>
+
+                        <ul>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=installation">#installation</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=chalk">#chalk</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=illustration">#illustration</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=print">#print</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="meta-item like">	<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16801" data-like-count="158" id="yui_3_7_3_1_1367101291252_753"><span class="like-icon"></span><span class="like-count">158 Likes</span></span>
+                    </div>
+                    <div class="meta-item comments">	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/dana#comments-517c175de4b0d7e92bf16801"></a></span>
+
+                        <div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/dana#comments-517c175de4b0d7e92bf16801">Comment</a>
+                        </div>
+                    </div>
+                    <div class="share">
+                        <script>
+                            Y.use('squarespace-social-buttons');
+                        </script><span class="squarespace-social-buttons inline-style" data-system-data-id="1355437254639-88AVHZ0Z006F5HGTBPXT" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16801/1355437260518/jpeg.jpeg"
+                        data-record-type="1" data-full-url="/blog/dana" data-title="Dana Tanamachi"><div id="social-yui_3_7_3_1_1367101291252_588" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_613" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div>
+                </div>
+                <div class="ss-social-list-wrapper">
+                    <div class="ss-social-button-list"></div>
+                </div>
+            </div>
+            </div>
+            </span>
+            </div>
+            </div>
+            </div>
+        </article>
+        <article class="entry hentry promoted promoted-block-video tag-web tag-typography tag-video tag-design author-heather-burns post-type-text article-index-3 clear" id="article-517c175de4b0d7e92bf16802" data-item-id="517c175de4b0d7e92bf16802">
+            <div class="promoted on">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16802">
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-12 span-12">
+                            <div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;2012/10 Jason Santa Maria (Benefit CreativeMornings)&quot;,&quot;is_plus&quot;:&quot;1&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:1342,&quot;description&quot;:&quot;&lt;p&gt;Jason Santa Maria (http://jasonsantamaria.com) was one of our two speakers at the Kickstarter Benefit CreativeMornings here in New York in October of 2012. In this honest and insightful presentation Jason talks about \&quot;Saying NO\&quot;.&lt;/p&gt;&quot;,&quot;thumbnail_width&quot;:1280,&quot;thumbnail_height&quot;:720,&quot;video_id&quot;:53155584,&quot;authorName&quot;:&quot;CreativeMornings&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/creativemornings&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/53155584&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca04eae4b0d5715a8dd20e&quot;}"
+                            data-block-type="32" id="block-d784a317dd24a55d3714">
+                                <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_293">
+                                    <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_561">
+                                        <div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_560">
+                                            <div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;"
+                                            data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_302">
+                                                <div class="intrinsic" id="yui_3_7_3_1_1367101291252_559">
+                                                    <div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_558">
+                                                        <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_7_3_1_1367101291252_321">
+                                                            <img data-image="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-src="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-load="false" class="loaded" data-image-dimensions="1280x720" style="top: 0px; left: 0px; width: 640px; height: 360px; position: relative;"
+                                                            src="./index_files/367098809_1280.jpg">
+                                                            <div class="sqs-video-opaque"></div>
+                                                            <div class="sqs-video-icon"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="entry-content">
+                	<h1 data-content-field="title" class="post-title">
 			        <a href="https://heather-burns-1rc4.squarespace.com/blog/jsm">Jason Santa Maria</a>
             </h1>
-      
-      			<div class="promoted off">
-				<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16802"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;2012/10 Jason Santa Maria (Benefit CreativeMornings)&quot;,&quot;is_plus&quot;:&quot;1&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:1342,&quot;description&quot;:&quot;&lt;p&gt;Jason Santa Maria (http://jasonsantamaria.com) was one of our two speakers at the Kickstarter Benefit CreativeMornings here in New York in October of 2012. In this honest and insightful presentation Jason talks about \&quot;Saying NO\&quot;.&lt;/p&gt;&quot;,&quot;thumbnail_width&quot;:1280,&quot;thumbnail_height&quot;:720,&quot;video_id&quot;:53155584,&quot;authorName&quot;:&quot;CreativeMornings&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/creativemornings&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/53155584&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca04eae4b0d5715a8dd20e&quot;}" data-block-type="32" id="block-d784a317dd24a55d3714"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_346"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_565"><div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_564"><div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_355"><div class="intrinsic" id="yui_3_7_3_1_1367101291252_563"><div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_562"><div class="sqs-video-overlay" style="opacity: 1;" id="yui_3_7_3_1_1367101291252_374"><img data-image="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-src="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-load="false" class="loading" data-image-dimensions="1280x720"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div></div></div></div></div></div>
-			</div>
-			 
-			
-			<div class="body">
-    	    		<div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16802"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;Jason Santa Maria is the founder and principal of the design studio&amp;nbsp;&lt;a href=\&quot;http://madebymighty.com/\&quot; data-link-type=\&quot;external\&quot;&gt;Mighty&lt;/a&gt;, creative director for&amp;nbsp;&lt;a href=\&quot;http://typekit.com/\&quot; data-link-type=\&quot;external\&quot;&gt;Typekit&lt;/a&gt;, a faculty member in the&amp;nbsp;&lt;a href=\&quot;http://interactiondesign.sva.edu/\&quot; data-link-type=\&quot;external\&quot;&gt;MFA Interaction Design program&lt;/a&gt;&amp;nbsp;at SVA, co-founder of&amp;nbsp;&lt;a href=\&quot;http://books.alistapart.com/\&quot; data-link-type=\&quot;external\&quot;&gt;A Book Apart&lt;/a&gt;, former vice president of&amp;nbsp;&lt;a href=\&quot;http://www.aigany.org/\&quot; data-link-type=\&quot;external\&quot;&gt;AIGA/NY&lt;/a&gt;, founder of&amp;nbsp;&lt;a href=\&quot;http://typedia.com/\&quot; data-link-type=\&quot;external\&quot;&gt;Typedia&lt;/a&gt;, and creative director for&amp;nbsp;&lt;a href=\&quot;http://www.alistapart.com/\&quot; data-link-type=\&quot;external\&quot;&gt;A List Apart&lt;/a&gt;, a magazine for people who make websites.&amp;nbsp;Jason recently spoke at&amp;nbsp;Creative Mornings/New York as part of the&amp;nbsp;&lt;a href=\&quot;http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive\&quot;&gt;Kickstarter benefit&lt;/a&gt;&amp;nbsp;to create an archive of of every video from every speaker from every chapter.&lt;/p&gt;&lt;p&gt;+ &lt;a href=\&quot;#\&quot; data-link-type=\&quot;external\&quot;&gt;jasonsantamaria.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;html&quot;:&quot;&lt;p&gt;&lt;/p&gt;&quot;}}" data-block-type="2" id="block-ff6b33be2cc733b4e06b"><div class="sqs-block-content"><p>Jason Santa Maria is the founder and principal of the design studio&nbsp;<a href="http://madebymighty.com/" data-link-type="external">Mighty</a>, creative director for&nbsp;<a href="http://typekit.com/" data-link-type="external">Typekit</a>, a faculty member in the&nbsp;<a href="http://interactiondesign.sva.edu/" data-link-type="external">MFA Interaction Design program</a>&nbsp;at SVA, co-founder of&nbsp;<a href="http://books.alistapart.com/" data-link-type="external">A Book Apart</a>, former vice president of&nbsp;<a href="http://www.aigany.org/" data-link-type="external">AIGA/NY</a>, founder of&nbsp;<a href="http://typedia.com/" data-link-type="external">Typedia</a>, and creative director for&nbsp;<a href="http://www.alistapart.com/" data-link-type="external">A List Apart</a>, a magazine for people who make websites.&nbsp;Jason recently spoke at&nbsp;Creative Mornings/New York as part of the&nbsp;<a href="http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive">Kickstarter benefit</a>&nbsp;to create an archive of of every video from every speaker from every chapter.</p><p>+ <a href="https://heather-burns-1rc4.squarespace.com/blog//?r=46736159#" data-link-type="external">jasonsantamaria.com</a></p></div></div></div></div></div>				  		    	</div>	
-    	
-    			
-	    <div class="meta-list clear">
 
-	    	<div class="meta-item date">
-		    	<span class="meta-icon"></span>
-		    	<time>December 16, 2012</time>
-	    	</div>
+                <div class="promoted off">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16802">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;2012/10 Jason Santa Maria (Benefit CreativeMornings)&quot;,&quot;is_plus&quot;:&quot;1&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:1342,&quot;description&quot;:&quot;&lt;p&gt;Jason Santa Maria (http://jasonsantamaria.com) was one of our two speakers at the Kickstarter Benefit CreativeMornings here in New York in October of 2012. In this honest and insightful presentation Jason talks about \&quot;Saying NO\&quot;.&lt;/p&gt;&quot;,&quot;thumbnail_width&quot;:1280,&quot;thumbnail_height&quot;:720,&quot;video_id&quot;:53155584,&quot;authorName&quot;:&quot;CreativeMornings&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/creativemornings&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/53155584&quot;,&quot;resolved&quot;:true,&quot;customThumb&quot;:&quot;50ca04eae4b0d5715a8dd20e&quot;}"
+                                data-block-type="32" id="block-d784a317dd24a55d3714">
+                                    <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_346">
+                                        <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_565">
+                                            <div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_564">
+                                                <div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/53155584?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;"
+                                                data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_355">
+                                                    <div class="intrinsic" id="yui_3_7_3_1_1367101291252_563">
+                                                        <div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_562">
+                                                            <div class="sqs-video-overlay" style="opacity: 1;" id="yui_3_7_3_1_1367101291252_374">
+                                                                <img data-image="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-src="https://secure-b.vimeocdn.com/ts/367/098/367098809_1280.jpg" data-load="false" class="loading" data-image-dimensions="1280x720">
+                                                                <div class="sqs-video-opaque"></div>
+                                                                <div class="sqs-video-icon"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16802">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;Jason Santa Maria is the founder and principal of the design studio&amp;nbsp;&lt;a href=\&quot;http://madebymighty.com/\&quot; data-link-type=\&quot;external\&quot;&gt;Mighty&lt;/a&gt;, creative director for&amp;nbsp;&lt;a href=\&quot;http://typekit.com/\&quot; data-link-type=\&quot;external\&quot;&gt;Typekit&lt;/a&gt;, a faculty member in the&amp;nbsp;&lt;a href=\&quot;http://interactiondesign.sva.edu/\&quot; data-link-type=\&quot;external\&quot;&gt;MFA Interaction Design program&lt;/a&gt;&amp;nbsp;at SVA, co-founder of&amp;nbsp;&lt;a href=\&quot;http://books.alistapart.com/\&quot; data-link-type=\&quot;external\&quot;&gt;A Book Apart&lt;/a&gt;, former vice president of&amp;nbsp;&lt;a href=\&quot;http://www.aigany.org/\&quot; data-link-type=\&quot;external\&quot;&gt;AIGA/NY&lt;/a&gt;, founder of&amp;nbsp;&lt;a href=\&quot;http://typedia.com/\&quot; data-link-type=\&quot;external\&quot;&gt;Typedia&lt;/a&gt;, and creative director for&amp;nbsp;&lt;a href=\&quot;http://www.alistapart.com/\&quot; data-link-type=\&quot;external\&quot;&gt;A List Apart&lt;/a&gt;, a magazine for people who make websites.&amp;nbsp;Jason recently spoke at&amp;nbsp;Creative Mornings/New York as part of the&amp;nbsp;&lt;a href=\&quot;http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive\&quot;&gt;Kickstarter benefit&lt;/a&gt;&amp;nbsp;to create an archive of of every video from every speaker from every chapter.&lt;/p&gt;&lt;p&gt;+ &lt;a href=\&quot;#\&quot; data-link-type=\&quot;external\&quot;&gt;jasonsantamaria.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;html&quot;:&quot;&lt;p&gt;&lt;/p&gt;&quot;}}"
+                                data-block-type="2" id="block-ff6b33be2cc733b4e06b">
+                                    <div class="sqs-block-content">
+                                        <p>Jason Santa Maria is the founder and principal of the design studio&nbsp;<a href="http://madebymighty.com/" data-link-type="external">Mighty</a>, creative director for&nbsp;<a href="http://typekit.com/" data-link-type="external">Typekit</a>, a faculty
+                                            member in the&nbsp;<a href="http://interactiondesign.sva.edu/" data-link-type="external">MFA Interaction Design program</a>&nbsp;at SVA, co-founder of&nbsp;<a href="http://books.alistapart.com/" data-link-type="external">A Book Apart</a>, former vice
+                                            president of&nbsp;<a href="http://www.aigany.org/" data-link-type="external">AIGA/NY</a>, founder of&nbsp;<a href="http://typedia.com/" data-link-type="external">Typedia</a>, and creative director for&nbsp;<a href="http://www.alistapart.com/" data-link-type="external">A List Apart</a>,
+                                            a magazine for people who make websites.&nbsp;Jason recently spoke at&nbsp;Creative Mornings/New York as part of the&nbsp;<a href="http://www.kickstarter.com/projects/swissmiss/creativemornings-creating-an-archive">Kickstarter benefit</a>&nbsp;to create
+                                            an archive of of every video from every speaker from every chapter.</p>
+                                        <p>+ <a href="https://heather-burns-1rc4.squarespace.com/blog//?r=46736159#" data-link-type="external">jasonsantamaria.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meta-list clear">
+                    <div class="meta-item date">	<span class="meta-icon"></span>
 
-	    		    	<div class="meta-item author">
-	    		<span class="meta-icon"></span>
-	    		<div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a></div>
-	    	</div>
-	    	 
-	    	
-	      	      <div class="meta-item tags">
-	      	<span class="meta-icon"></span>
-	      	<ul>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=web">#web</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=typography">#typography</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=video">#video</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=design">#design</a></li>
-		      		      	</ul>
-      	</div>
-      	      	
-      	      	
-      	<div class="meta-item like">
-      		<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16802" data-like-count="227" id="yui_3_7_3_1_1367101291252_756"><span class="like-icon"></span><span class="like-count">227 Likes</span></span>
-      	</div>
-	      	      
-	            	<div class="meta-item comments">
-	      	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/jsm#comments-517c175de4b0d7e92bf16802"></a></span>
-	      	<div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/jsm#comments-517c175de4b0d7e92bf16802">Comment</a></div>
-      	</div>
-    		
-    		<div class="share">
-	      	<script>Y.use('squarespace-social-buttons');</script><span class="squarespace-social-buttons inline-style" data-system-data-id="1355437265517-ESA6D8CZZEADEL7HCT06" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16802/1355437271837/jpeg-1.jpeg" data-record-type="1" data-full-url="/blog/jsm" data-title="Jason Santa Maria"><div id="social-yui_3_7_3_1_1367101291252_590" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_628" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
-	    	</div>
-      	
-	    </div>
-    	
-		</div>
-	</article>
-	
-  
-	<article class="entry hentry promoted promoted-block-video tag-product tag-freelance tag-video tag-print tag-design author-heather-burns post-type-text article-index-4 clear" id="article-517c175de4b0d7e92bf16803" data-item-id="517c175de4b0d7e92bf16803">
-		
-				<div class="promoted on">
-			<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16803"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;Field Notes Brand: From Seed&quot;,&quot;is_plus&quot;:&quot;0&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:527,&quot;description&quot;:&quot;&quot;,&quot;thumbnail_width&quot;:960,&quot;thumbnail_height&quot;:540,&quot;video_id&quot;:40182652,&quot;authorName&quot;:&quot;Coudal Partners&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/coudal&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/40182652&quot;,&quot;resolved&quot;:true}" data-block-type="32" id="block-ef0e34ba8bc0b09c7cdc"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_399"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_569"><div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_568"><div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_408"><div class="intrinsic" id="yui_3_7_3_1_1367101291252_567"><div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_566"><div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_7_3_1_1367101291252_427"><img data-image="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-src="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-load="false" class="loaded" data-image-dimensions="960x540" style="top: 0px; left: 0px; width: 640px; height: 360px; position: relative;" src="./index_files/277552421_960.jpg"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div></div></div></div></div></div>
-		</div>
-		 
-		
-		<div class="entry-content">
-		
-			<h1 data-content-field="title" class="post-title">
+                        <time>December 16, 2012</time>
+                    </div>
+                    <div class="meta-item author">	<span class="meta-icon"></span>
+
+                        <div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a>
+                        </div>
+                    </div>
+                    <div class="meta-item tags">	<span class="meta-icon"></span>
+
+                        <ul>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=web">#web</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=typography">#typography</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=video">#video</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=design">#design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="meta-item like">	<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16802" data-like-count="227" id="yui_3_7_3_1_1367101291252_756"><span class="like-icon"></span><span class="like-count">227 Likes</span></span>
+                    </div>
+                    <div class="meta-item comments">	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/jsm#comments-517c175de4b0d7e92bf16802"></a></span>
+
+                        <div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/jsm#comments-517c175de4b0d7e92bf16802">Comment</a>
+                        </div>
+                    </div>
+                    <div class="share">
+                        <script>
+                            Y.use('squarespace-social-buttons');
+                        </script><span class="squarespace-social-buttons inline-style" data-system-data-id="1355437265517-ESA6D8CZZEADEL7HCT06" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16802/1355437271837/jpeg-1.jpeg"
+                        data-record-type="1" data-full-url="/blog/jsm" data-title="Jason Santa Maria"><div id="social-yui_3_7_3_1_1367101291252_590" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_628" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div>
+                </div>
+                <div class="ss-social-list-wrapper">
+                    <div class="ss-social-button-list"></div>
+                </div>
+            </div>
+            </div>
+            </span>
+            </div>
+            </div>
+            </div>
+        </article>
+        <article class="entry hentry promoted promoted-block-video tag-product tag-freelance tag-video tag-print tag-design author-heather-burns post-type-text article-index-4 clear" id="article-517c175de4b0d7e92bf16803" data-item-id="517c175de4b0d7e92bf16803">
+            <div class="promoted on">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16803">
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-12 span-12">
+                            <div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;Field Notes Brand: From Seed&quot;,&quot;is_plus&quot;:&quot;0&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:527,&quot;description&quot;:&quot;&quot;,&quot;thumbnail_width&quot;:960,&quot;thumbnail_height&quot;:540,&quot;video_id&quot;:40182652,&quot;authorName&quot;:&quot;Coudal Partners&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/coudal&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/40182652&quot;,&quot;resolved&quot;:true}"
+                            data-block-type="32" id="block-ef0e34ba8bc0b09c7cdc">
+                                <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_399">
+                                    <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_569">
+                                        <div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_568">
+                                            <div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;"
+                                            data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_408">
+                                                <div class="intrinsic" id="yui_3_7_3_1_1367101291252_567">
+                                                    <div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_566">
+                                                        <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_7_3_1_1367101291252_427">
+                                                            <img data-image="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-src="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-load="false" class="loaded" data-image-dimensions="960x540" style="top: 0px; left: 0px; width: 640px; height: 360px; position: relative;"
+                                                            src="./index_files/277552421_960.jpg">
+                                                            <div class="sqs-video-opaque"></div>
+                                                            <div class="sqs-video-icon"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="entry-content">
+                	<h1 data-content-field="title" class="post-title">
 			        <a href="https://heather-burns-1rc4.squarespace.com/blog/aaron-james-draplin">Aaron James Draplin</a>
             </h1>
-      
-      			<div class="promoted off">
-				<div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16803"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;Field Notes Brand: From Seed&quot;,&quot;is_plus&quot;:&quot;0&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:527,&quot;description&quot;:&quot;&quot;,&quot;thumbnail_width&quot;:960,&quot;thumbnail_height&quot;:540,&quot;video_id&quot;:40182652,&quot;authorName&quot;:&quot;Coudal Partners&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/coudal&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/40182652&quot;,&quot;resolved&quot;:true}" data-block-type="32" id="block-ef0e34ba8bc0b09c7cdc"><div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_452"><div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_573"><div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_572"><div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;" data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_461"><div class="intrinsic" id="yui_3_7_3_1_1367101291252_571"><div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_570"><div class="sqs-video-overlay" style="opacity: 1;" id="yui_3_7_3_1_1367101291252_480"><img data-image="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-src="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-load="false" class="loading" data-image-dimensions="960x540"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div></div></div></div></div></div>
-			</div>
-			 
-			
-			<div class="body">
-    	    		<div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16803"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;Aaron James Draplin has been called a badass in the same sentence as a big softie. He&#39;s a big, loud and shamelessly big-hearted graphic designer who is probably the most sincere designer on this planet. He&#39;s done sleeves for Richmond Fountain, is one of the founders of Field Notes brand and has done more logotype&#39;s than David Hasselhof has done cheesy smiles.&lt;/p&gt;&lt;p&gt;+&amp;nbsp;&lt;a href=\&quot;http://www.draplin.com\&quot; data-link-type=\&quot;external\&quot; target=\&quot;_blank\&quot;&gt;draplin.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;source&quot;:&quot;&quot;}}" data-block-type="2" id="block-87c7e1e18cf914a5f889"><div class="sqs-block-content"><p>Aaron James Draplin has been called a badass in the same sentence as a big softie. He's a big, loud and shamelessly big-hearted graphic designer who is probably the most sincere designer on this planet. He's done sleeves for Richmond Fountain, is one of the founders of Field Notes brand and has done more logotype's than David Hasselhof has done cheesy smiles.</p><p>+&nbsp;<a href="http://www.draplin.com/" data-link-type="external" target="_blank">draplin.com</a></p></div></div></div></div></div>				  		    	</div>	
-    	
-    			
-	    <div class="meta-list clear">
 
-	    	<div class="meta-item date">
-		    	<span class="meta-icon"></span>
-		    	<time>December 15, 2012</time>
-	    	</div>
+                <div class="promoted off">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="promoted-block" id="promoted-block-517c175de4b0d7e92bf16803">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block video-block" data-block-json="{&quot;overlay&quot;:true,&quot;type&quot;:&quot;video&quot;,&quot;version&quot;:&quot;1.0&quot;,&quot;title&quot;:&quot;Field Notes Brand: From Seed&quot;,&quot;is_plus&quot;:&quot;0&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;amp;api=1\&quot; width=\&quot;1280\&quot; height=\&quot;720\&quot; frameborder=\&quot;0\&quot; webkitallowfullscreen=\&quot;\&quot; mozallowfullscreen=\&quot;\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;duration&quot;:527,&quot;description&quot;:&quot;&quot;,&quot;thumbnail_width&quot;:960,&quot;thumbnail_height&quot;:540,&quot;video_id&quot;:40182652,&quot;authorName&quot;:&quot;Coudal Partners&quot;,&quot;authorUrl&quot;:&quot;https://vimeo.com/coudal&quot;,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;providerUrl&quot;:&quot;https://vimeo.com/&quot;,&quot;thumbnailUrl&quot;:&quot;https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;,&quot;resolveObject&quot;:&quot;Video&quot;,&quot;url&quot;:&quot;http://vimeo.com/40182652&quot;,&quot;resolved&quot;:true}"
+                                data-block-type="32" id="block-ef0e34ba8bc0b09c7cdc">
+                                    <div class="sqs-block-content" id="yui_3_7_3_1_1367101291252_452">
+                                        <div class="intrinsic" style="max-width:100%" id="yui_3_7_3_1_1367101291252_573">
+                                            <div class="embed-block-wrapper" style="padding-bottom:56.25%;" id="yui_3_7_3_1_1367101291252_572">
+                                                <div class="sqs-video-wrapper video-none" data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/40182652?wmode=opaque&amp;api=1&quot; width=&quot;1280&quot; height=&quot;720&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;"
+                                                data-provider-name="Vimeo" id="yui_3_7_3_1_1367101291252_461">
+                                                    <div class="intrinsic" id="yui_3_7_3_1_1367101291252_571">
+                                                        <div class="intrinsic-inner" style="padding-bottom: 56.25%;" id="yui_3_7_3_1_1367101291252_570">
+                                                            <div class="sqs-video-overlay" style="opacity: 1;" id="yui_3_7_3_1_1367101291252_480">
+                                                                <img data-image="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-src="https://secure-b.vimeocdn.com/ts/277/552/277552421_960.jpg" data-load="false" class="loading" data-image-dimensions="960x540">
+                                                                <div class="sqs-video-opaque"></div>
+                                                                <div class="sqs-video-icon"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="item" id="item-517c175de4b0d7e92bf16803">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block html-block" data-block-json="{&quot;html&quot;:&quot;&lt;p&gt;Aaron James Draplin has been called a badass in the same sentence as a big softie. He&#39;s a big, loud and shamelessly big-hearted graphic designer who is probably the most sincere designer on this planet. He&#39;s done sleeves for Richmond Fountain, is one of the founders of Field Notes brand and has done more logotype&#39;s than David Hasselhof has done cheesy smiles.&lt;/p&gt;&lt;p&gt;+&amp;nbsp;&lt;a href=\&quot;http://www.draplin.com\&quot; data-link-type=\&quot;external\&quot; target=\&quot;_blank\&quot;&gt;draplin.com&lt;/a&gt;&lt;/p&gt;&quot;,&quot;wysiwyg&quot;:{&quot;source&quot;:&quot;&quot;}}"
+                                data-block-type="2" id="block-87c7e1e18cf914a5f889">
+                                    <div class="sqs-block-content">
+                                        <p>Aaron James Draplin has been called a badass in the same sentence as a big softie. He's a big, loud and shamelessly big-hearted graphic designer who is probably the most sincere designer on this planet. He's done sleeves for Richmond Fountain, is one
+                                            of the founders of Field Notes brand and has done more logotype's than David Hasselhof has done cheesy smiles.</p>
+                                        <p>+&nbsp;<a href="http://www.draplin.com/" data-link-type="external" target="_blank">draplin.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meta-list clear">
+                    <div class="meta-item date">	<span class="meta-icon"></span>
 
-	    		    	<div class="meta-item author">
-	    		<span class="meta-icon"></span>
-	    		<div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a></div>
-	    	</div>
-	    	 
-	    	
-	      	      <div class="meta-item tags">
-	      	<span class="meta-icon"></span>
-	      	<ul>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=product">#product</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=freelance">#freelance</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=video">#video</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=print">#print</a></li>
-		      			      	<li><a href="https://heather-burns-1rc4.squarespace.com/?tag=design">#design</a></li>
-		      		      	</ul>
-      	</div>
-      	      	
-      	      	
-      	<div class="meta-item like">
-      		<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16803" data-like-count="3" id="yui_3_7_3_1_1367101291252_759"><span class="like-icon"></span><span class="like-count">3 Likes</span></span>
-      	</div>
-	      	      
-	            	<div class="meta-item comments">
-	      	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/aaron-james-draplin#comments-517c175de4b0d7e92bf16803"></a></span>
-	      	<div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/aaron-james-draplin#comments-517c175de4b0d7e92bf16803">Comment</a></div>
-      	</div>
-    		
-    		<div class="share">
-	      	<script>Y.use('squarespace-social-buttons');</script><span class="squarespace-social-buttons inline-style" data-system-data-id="1355437287837-ORZJL2RXZGCY62WXEL0U" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16803/1355935386624/jpeg-2.jpeg" data-record-type="1" data-full-url="/blog/aaron-james-draplin" data-title="Aaron James Draplin"><div id="social-yui_3_7_3_1_1367101291252_592" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_643" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
-	    	</div>
-      	
-	    </div>
-    	
-		</div>
-	</article>
-	
- 
+                        <time>December 15, 2012</time>
+                    </div>
+                    <div class="meta-item author">	<span class="meta-icon"></span>
 
-		<nav class="pagination">
-		Newer<span> / </span><a href="https://heather-burns-1rc4.squarespace.com/blog//?page=2">Older</a>  </nav>
-  
-</section>
-	    </div>
-	  
-		  <div id="sidebar">
-		  	<div class="wrapper clear">
-			  	
-		      					<div class="sidebar-logo">
-					  <h1 class="sidebar-site-title" data-content-field="site-title">
+                        <div class="display-name"><a href="https://heather-burns-1rc4.squarespace.com/?author=517c175de4b0d7e92bf167a5">Heather Burns</a>
+                        </div>
+                    </div>
+                    <div class="meta-item tags">	<span class="meta-icon"></span>
+
+                        <ul>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=product">#product</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=freelance">#freelance</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=video">#video</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=print">#print</a>
+                            </li>
+                            <li><a href="https://heather-burns-1rc4.squarespace.com/?tag=design">#design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="meta-item like">	<span class="sqs-simple-like" data-item-id="517c175de4b0d7e92bf16803" data-like-count="3" id="yui_3_7_3_1_1367101291252_759"><span class="like-icon"></span><span class="like-count">3 Likes</span></span>
+                    </div>
+                    <div class="meta-item comments">	<span class="meta-icon"><a href="https://heather-burns-1rc4.squarespace.com/blog/aaron-james-draplin#comments-517c175de4b0d7e92bf16803"></a></span>
+
+                        <div class="comment-count"><a href="https://heather-burns-1rc4.squarespace.com/blog/aaron-james-draplin#comments-517c175de4b0d7e92bf16803">Comment</a>
+                        </div>
+                    </div>
+                    <div class="share">
+                        <script>
+                            Y.use('squarespace-social-buttons');
+                        </script><span class="squarespace-social-buttons inline-style" data-system-data-id="1355437287837-ORZJL2RXZGCY62WXEL0U" data-asset-url="http://static.squarespace.com/static/517c175de4b0d7e92bf167a7/517c175de4b0d7e92bf167ad/517c175de4b0d7e92bf16803/1355935386624/jpeg-2.jpeg"
+                        data-record-type="1" data-full-url="/blog/aaron-james-draplin" data-title="Aaron James Draplin"><div id="social-yui_3_7_3_1_1367101291252_592" class="yui3-widget yui3-socialbutton" style=""><div id="yui_3_7_3_1_1367101291252_643" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div>
+                </div>
+                <div class="ss-social-list-wrapper">
+                    <div class="ss-social-button-list"></div>
+                </div>
+            </div>
+            </div>
+            </span>
+            </div>
+            </div>
+            </div>
+        </article>
+        <nav class="pagination">Newer<span> / </span><a href="https://heather-burns-1rc4.squarespace.com/blog//?page=2">Older</a> 
+        </nav>
+        </section>
+        </div>
+        <div id="sidebar">
+            <div class="wrapper clear">
+                <div class="sidebar-logo">
+                     <h1 class="sidebar-site-title" data-content-field="site-title">
 					  	<a href="https://heather-burns-1rc4.squarespace.com/">
 					  							  		<span class="sidebar-site-title-span">GIRLS like Games</span>
 					  	</a>
 						</h1>
-																		<div class="site-desc">
-							<p>​Board games, video games, mind games. &nbsp;This is a space for us ladies to share our favorite games and organize game events.</p>
-						</div>
-											</div> 
-					
-	        <div class="sidebar-nav clear">
-	        	<div class="show-nav"></div>
 
-<div class="nav">
+                    <div class="site-desc">
+                        <p>​Farm-to-table before they sold out wolf cosby sweater blog truffaut. Pour-over YOLO direct trade mumblecore sartorial. Deep v kogi neutra trust fund plaid messenger bag.</p>
+                    </div>
+                </div>
+                <div class="sidebar-nav clear">
+                    <div class="show-nav"></div>
+                    <div class="nav">
+                        <div class="nav-link active">	<a href="https://heather-burns-1rc4.squarespace.com/" class="blog-collection"><span>Blog</span></a>
 
-		<div class="nav-link active">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/" class="blog-collection"><span>Blog</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/about/" class="page-collection"><span>About</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/about/" class="page-collection"><span>About</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/game-events/" class="events-collection"><span>Game Events</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/game-events/" class="events-collection"><span>Game Events</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/new-page/" class="page-collection"><span>Calander</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/new-page/" class="page-collection"><span>Calander</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                        <div class="nav-link">	<a href="https://heather-burns-1rc4.squarespace.com/games/" class="gallery-collection"><span>Game Gallery</span></a>
 
-		<div class="nav-link">
-	
-		
-							<a href="https://heather-burns-1rc4.squarespace.com/games/" class="gallery-collection"><span>Game Gallery</span></a>
-				
-			
-							
-				</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sqs-layout sqs-grid-1 columns-1" data-type="block-field" data-updated-on="1367101058229" id="sqs-sidebar">
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-1 span-1">
+                            <div class="sqs-block horizontalrule-block" data-block-json="{}" data-block-type="47" id="block-2727b610fd27c47af8ae">
+                                <div class="sqs-block-content">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="wrapper clear">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="block-field" data-updated-on="1365604090147" id="sqs-footer">
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-12 span-12">
+                            <div class="sqs-block html-block" data-block-json="{&quot;wysiwyg&quot;:{&quot;engine&quot;:&quot;code&quot;,&quot;mode&quot;:&quot;htmlmixed&quot;,&quot;isSource&quot;:false,&quot;source&quot;:&quot;&quot;},&quot;html&quot;:&quot;&lt;p&gt;Powered by&amp;nbsp;&lt;a href=\&quot;http://squarespace6.com/\&quot;&gt;Squarespace&lt;/a&gt;. &amp;nbsp;Content is for demonstration purposes only.&lt;/p&gt;&quot;,&quot;engine&quot;:&quot;visual&quot;}"
+                            data-block-type="2" id="block-676b7ee9984c12f804eb">
+                                <div class="sqs-block-content">
+                                    <p>Powered by&nbsp;<a href="http://squarespace6.com/">Squarespace</a>. &nbsp;Content is for demonstration purposes only.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-12 span-12">
+                            <div class="sqs-block spacer-block sized vsize-1" data-block-json="{&quot;vSize&quot;:1}" data-block-type="21" id="block-5594f67abbf52b43e669">
+                                <div class="sqs-block-content">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        </div>
+        <div class="absolute-cart-box">
+            <div id="yui_3_7_3_1_1367101291252_124" class="yui3-widget sqs-widget sqs-pill-shopping-cart sqs-scalable-hidden" style="visibility: hidden; opacity: 0; -webkit-transform: scale(0.94);">
+                <div id="yui_3_7_3_1_1367101291252_126" class="sqs-pill-shopping-cart-content dark">
+                    <div class="icon"></div>
+                    <div class="details">Cart&nbsp;-&nbsp; <span class="total-quantity"></span>
+ <span class="suffix">items</span>
 
-	
-</div>
-
-	        </div>
-
-	        <div class="sqs-layout sqs-grid-1 columns-1" data-type="block-field" data-updated-on="1367101058229" id="sqs-sidebar"><div class="row sqs-row"><div class="col sqs-col-1 span-1"><div class="sqs-block horizontalrule-block" data-block-json="{}" data-block-type="47" id="block-2727b610fd27c47af8ae"><div class="sqs-block-content"><hr></div></div></div></div></div>
-	        
-							      					
-      	</div>
-		  </div>
-	      	    
-	    <footer id="footer">
-	    	<div class="wrapper clear">
-		      <div class="sqs-layout sqs-grid-12 columns-12" data-type="block-field" data-updated-on="1365604090147" id="sqs-footer"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block" data-block-json="{&quot;wysiwyg&quot;:{&quot;engine&quot;:&quot;code&quot;,&quot;mode&quot;:&quot;htmlmixed&quot;,&quot;isSource&quot;:false,&quot;source&quot;:&quot;&quot;},&quot;html&quot;:&quot;&lt;p&gt;Powered by&amp;nbsp;&lt;a href=\&quot;http://squarespace6.com/\&quot;&gt;Squarespace&lt;/a&gt;. &amp;nbsp;Content is for demonstration purposes only.&lt;/p&gt;&quot;,&quot;engine&quot;:&quot;visual&quot;}" data-block-type="2" id="block-676b7ee9984c12f804eb"><div class="sqs-block-content"><p>Powered by&nbsp;<a href="http://squarespace6.com/">Squarespace</a>. &nbsp;Content is for demonstration purposes only.</p></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block spacer-block sized vsize-1" data-block-json="{&quot;vSize&quot;:1}" data-block-type="21" id="block-5594f67abbf52b43e669"><div class="sqs-block-content">&nbsp;</div></div></div></div></div>
-					       
-	      </div>
-		  </footer>
-	    
-		</div>
-  </div>  
-
-
-
-<div class="absolute-cart-box"><div id="yui_3_7_3_1_1367101291252_124" class="yui3-widget sqs-widget sqs-pill-shopping-cart sqs-scalable-hidden" style="visibility: hidden; opacity: 0; -webkit-transform: scale(0.94);"><div id="yui_3_7_3_1_1367101291252_126" class="sqs-pill-shopping-cart-content dark"><div class="icon"></div>
-
-<div class="details">
-  Cart&nbsp;-&nbsp;
-    <span class="total-quantity"></span>
-    <span class="suffix">items</span>
-</div>
-
+                    </div>
 <span class="subtotal">
   <span class="price"><span class="sqs-money-native">0.00</span></span>
-</span></div></div></div></body></html>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
